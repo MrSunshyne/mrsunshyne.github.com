@@ -1,0 +1,247 @@
+/*---------------------------------------------------
+    LESS Origins 0.1
+  ---------------------------------------------------
+    A set of useful mixins for rapid styling
+-----------------------------------------------------*/
+/*//Javascript inside CSS
+@browser : `browserDetect()`;
+@report : `console.log('@{a}')`;*/
+
+
+
+//Animations
+.animate(@name, @duration:1s , @iteration:1 , @timing:linear , @direction:normal , @delay:0s, @fillmode:forwards){
+  /*Firefox*/
+  -moz-animation-name:@name;
+  -moz-animation-duration:@duration;
+  -moz-animation-iteration-count:@iteration;
+  -moz-animation-timing-function:@timing;
+  /*Chrome Safari*/
+  -webkit-animation-name:@name;
+  -webkit-animation-duration:@duration;
+  -webkit-animation-iteration-count:@iteration;
+  -webkit-animation-timing-function:@timing;
+  -webkit-animation-delay: @delay;
+  /*Opera*/
+
+  -o-animation-name:@name;
+  -o-animation-duration:@duration;
+  -o-animation-iteration-count:@iteration;
+  -o-animation-timing-function:@timing;
+
+  /*Microsoft*/
+
+  -ms-animation-name:@name;
+  -ms-animation-duration:@duration;
+  -ms-animation-iteration-count:@iteration;
+  -ms-animation-timing-function:@timing;
+
+  /*The future*/
+  animation-name:@name;
+  animation-duration:@duration;
+  animation-iteration-count:@iteration;
+  animation-timing-function:@timing;
+
+}
+
+//transitions
+.trans-fade(@amount){
+  opacity:@amount;
+  @-webkit-keyframes fadein{
+  from {opacity:0;}
+  to {opacity:@amount;}
+  }
+  @-moz-keyframes fadein{
+	from {opacity:0;}
+	to {opacity:@amount;}
+  }
+  @-o-keyframes fadein{
+	from {opacity:0;}
+	to {opacity:@amount;}
+  }
+  @-ms-keyframes fadein{
+	from {opacity:0;}
+	to {opacity:@amount;}
+  }
+  @-webkit-keyframes fadeout{
+  from {opacity:1;}
+  to {opacity:@amount;}
+  }
+  @-moz-keyframes fadeout{
+	from {opacity:1;}
+	to {opacity:@amount;}
+  }
+  @-o-keyframes fadeout{
+	from {opacity:1;}
+	to {opacity:@amount;}
+  }
+  @-ms-keyframes fadeout{
+	from {opacity:1;}
+	to {opacity:@amount;}
+  }
+}
+
+.perspective(@depth){
+	-webkit-perspective: @depth;
+	-moz-perspective: @depth;
+	-o-perspective: @depth;
+	-ms-perspective: @depth;
+	perspective: @depth;
+}
+
+.transform-origin(@x , @y){
+	-webkit-transform-origin:@arguments;
+	-moz-transform-origin: @arguments;
+	-o-transform-origin: @arguments;
+	-ms-transform-origin: @arguments;
+	transform-origin: @arguments;
+}
+
+
+//Mixins
+.rounded(@radius: 2px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+
+.transform(@arguments){
+  -webkit-transform:@arguments;
+  -moz-transform:@arguments;
+  -o-transform:@arguments;
+  -ms-transform:@arguments;
+}
+
+.box-shadow(@arguments) {
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+.perspective(@depth){
+	-webkit-perspective: @depth;
+	-moz-perspective: @depth;
+	-o-perspective: @depth;
+	-ms-perspective: @depth;
+	perspective: @depth;
+}
+
+.transform-style(@value){
+  -webkit-transform-style:@value;
+  -moz-transform-style:@value;
+  -o-transform-style:@value;
+  -ms-transform-style:@value;
+}
+
+
+
+.backface-visibility(@value){
+  -webkit-backface-visibility:@value;
+  -moz-backface-visibility:@value;
+  -o-backface-visibility:@value;
+  -ms-backface-visibility:@value;
+}
+
+.opacity(@opacity: 0.5) {
+  -moz-opacity: @opacity;
+  -khtml-opacity: @opacity;
+  -webkit-opacity: @opacity;
+  opacity: @opacity;
+}
+
+.gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
+  background: @color;
+  background: -webkit-gradient(linear, left bottom, left top,color-stop(0, @start), color-stop(1, @stop));
+  background: -ms-linear-gradient(bottom,@start,@stop);
+  background: -moz-linear-gradient(center bottom,@start 0%,@stop 100%);
+}
+.bw-gradient(@color: #F5F5F5, @start: 0, @stop: 255) {
+  background: @color;
+  background: -webkit-gradient(linear,left bottom,left top, color-stop(0, rgb(@start,@start,@start)),color-stop(1, rgb(@stop,@stop,@stop)));
+  background: -ms-linear-gradient(bottom,rgb(@start,@start,@start) 0%,rgb(@start,@start,@start) 100%);
+  background: -moz-linear-gradient(center bottom,rgb(@start,@start,@start) 0%,rgb(@stop,@stop,@stop) 100%);
+}
+
+//Typography
+.arial{font-family: "Arial", sans-serif;}
+.trebuchet{font-family: "Trebuchet MS", sans-serif;}
+.opensans{font-family: "Open Sans", sans-serif;}
+.century{font-family: "Century Gothic", sans-serif;}
+.questrial{font-family: "Questrial", sans-serif;}
+.times{font-family: "Times New Roman", serif;}
+.serif{font-family: "Arial", sans-serif;}
+.sanserif{font-family: "Times New Roman", serif;}
+
+//Text Shadow
+.text-shadow-positive(@color: @light-grey){text-shadow: 1px 1px 0 @color;}
+.text-shadow-negative(@color: @white-grey){	text-shadow: -1px -1px 0 @color;}
+
+//Box Model
+.box-sizing{
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+//urls
+.bg(@folder , @filename){
+  background: url('../images/@{folder}/@{filename}')0 0;
+}
+
+.cf{&:before,&:after { content:"";display:table;}&:after {clear:both;}zoom:1;}
+
+//Colors
+// Colours
+@grey: #555;
+@grey2: #d2ceca;
+@grey3: #6a6d73;
+@grey4: #55555e;
+@dark-grey: #292B2D;
+@dark-grey2: #505059;
+@dark-grey3: #24282d;
+@medium-grey: #505054;
+@light-grey: #B9B9B1;
+@ice-grey: #D1CEC9;
+@white-grey: #F0EBE6;
+@grey-blue: #677380;
+@grey-purple: #6e6e7a;
+@light-purple: #a8a8ba;
+@light-purple2: #afafc2;
+@white: #F4F2F9;
+@light-orange: #f5d7b8;
+@orange: #C09569;
+@orange-bg: #BF7455;
+@orange-shadow: #7F4D39;
+@burnt-orange: #806446;
+@light-brown: #997366;
+@brown: #614941;
+@rich-brown: #564533;
+@dark-orange: #593628;
+@yellow: #F8DA84;
+@light-yellow: #fff6de;
+@dark-yellow: #C4AC68;
+@blue: #8aa3be;
+@light-blue: #25AAE3;
+@blue-shadow: #666361;
+@dark-blue: #4E6073;
+@medium-blue: #7D98B7;
+@light-blue: #C7DCEB;
+@blue-green: #4a5866;
+@purple : #A200FF ;
+@magenta :#FF0097  ;
+@teal :#00ABA9  ;
+@lime : #8CBF26 ;
+@pink : #E671B8 ;
+@orange : #F09609 ;
+@blue : #25AAE3 ;
+@red : #E51400 ;
+@green : #339933 ;
+
+
+
+//Sprites
+.bp(@arguments){
+  background-position:@arguments;
+}
