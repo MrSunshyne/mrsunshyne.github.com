@@ -1,0 +1,49 @@
+/*---------------------------------------------------
+    LESS Origins 0.1
+  ---------------------------------------------------
+    A set of useful mixins for rapid styling
+-----------------------------------------------------*/
+/*//Javascript inside CSS
+@browser : `browserDetect()`;
+@report : `console.log('@{a}')`;*/
+.arial {
+  font-family: "Arial", sans-serif;
+}
+.trebuchet {
+  font-family: "Trebuchet MS", sans-serif;
+}
+.opensans {
+  font-family: "Open Sans", sans-serif;
+}
+.century {
+  font-family: "Century Gothic", sans-serif;
+}
+.questrial {
+  font-family: "Questrial", sans-serif;
+}
+.times {
+  font-family: "Times New Roman", serif;
+}
+.serif {
+  font-family: "Arial", sans-serif;
+}
+.sanserif {
+  font-family: "Times New Roman", serif;
+}
+.box-sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.cf {
+  zoom: 1;
+}
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
