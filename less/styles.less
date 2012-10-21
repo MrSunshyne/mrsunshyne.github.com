@@ -24,7 +24,6 @@ audio:not([controls]) {
 
 html {
 	font-size: 100%;
-	overflow: hidden;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 }
@@ -228,20 +227,21 @@ table {
 
 @-webkit-keyframes wiggle{
 	0%{opacity   : 1}
-	50%{opacity  : 0.6}
+	50%{opacity  : 0}
 	100%{opacity : 1}
 }
 
 @-moz-keyframes wiggle{
 	0%{opacity: 1}
-	50%{opacity: 0.6}
+	50%{opacity: 0}
 	100%{opacity: 1}
 }
 
 body{
-	background: #222;	
+	background: #eee url('../images/bg/light_wool.png');	
+	font-size:100%;
 }
-h1 {   
+div.logo {   
 	position:absolute;
 
 	@width  : 1000px;
@@ -261,9 +261,65 @@ h1 {
 	font-size              : 90px;
  	-webkit-font-smoothing : antialiased !important;
  	text-shadow            : 1px 1px 1px rgba(0,0,0,0.004);
- 	color: #333;
+ 	color: #eee;
 
  	.animate(wiggle, 4s, infinite, ease-in-out);
 }
 
+
+/*
+	Tyopgraphy
+*/
+
+h1{
+	font-family: 'Medula One', cursive;
+	font-size:60px;
+	font-weight:100;
+	margin-bottom:20px;
+}
+
+p{
+	text-align  : justify;
+	font-family : 'Trebuchet MS', sans-serif;
+	font-size   : 100%;
+	line-height:28px;
+	text-shadow: 0 1px 0px white;
+}
+
+@highlightcolor: #00C864;
+::selection {
+	background: @highlightcolor; /* Safari */
+	}
+::-moz-selection {
+	background: @highlightcolor; /* Firefox */
+}
 	
+.about{
+	.content-wrapper{
+		.logo{
+			position    : static;
+			margin      : 0;
+			text-align  : left;
+			font-size   : 40px;
+			color       : #000;
+			height      : 70px;
+			.animate(stop);
+			width:auto;
+		}
+		width     : 80%;
+		max-width : 1000px;
+		margin    : 0 auto;
+		article{
+			margin     : 10px auto 30px;
+			min-height : 50px;
+
+			border-bottom:2px solid #eee;
+			-webkit-transition: all .2s ease-in-out;
+
+			&:hover{
+				-webkit-transition: all .2s ease-in-out;
+				border-bottom:2px solid #76CBFE;
+			}
+		}
+	}
+}
