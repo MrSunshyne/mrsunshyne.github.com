@@ -403,8 +403,10 @@ p {
   min-height: 50px;
   border-bottom: 2px solid #eee;
   -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
 }
 .about .content-wrapper article:hover {
   -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
   border-bottom: 2px solid #76CBFE;
 }
