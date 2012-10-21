@@ -347,11 +347,13 @@ p {
   background: #00c864;
   /* Safari */
 
+  text-shadow: none!important;
 }
 ::-moz-selection {
   background: #00c864;
   /* Firefox */
 
+  text-shadow: none!important;
 }
 .about .content-wrapper {
   width: 80%;
