@@ -109,11 +109,11 @@ h1, h2{
 	font-size: 24px;
 	padding:0;
 	margin: 0;
-	font-family: 'Trebuchet MS' , sans-serif;
+	font-family: 'Open Sans' , sans-serif;
 }
 
 h1{
-	text-align     : center;
+	text-align     : left;
 	//padding-top : 40px;
 	font-size: 48px;
 	text-shadow: 0 -1px 0 #000;
@@ -179,4 +179,20 @@ article{
 			}
 		}
 	}	
+}
+
+div.logo{
+	position:relative;
+	margin: 10px auto;
+	width: auto;
+	left: auto;
+
+}
+
+/* Responsive */
+
+@media (max-width: 900px ) {
+	article.page-curl{
+		width: 80%;
+	}
 }

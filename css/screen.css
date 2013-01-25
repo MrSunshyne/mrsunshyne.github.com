@@ -115,12 +115,12 @@ h1, h2 {
   font-size: 24px;
   padding: 0;
   margin: 0;
-  font-family: 'Trebuchet MS' , sans-serif;
+  font-family: 'Open Sans' , sans-serif;
 }
 
 /* line 115, ../scss/screen.scss */
 h1 {
-  text-align: center;
+  text-align: left;
   font-size: 48px;
   text-shadow: 0 -1px 0 black;
   color: #444;
@@ -185,4 +185,20 @@ article ul.results li span {
   display: inline-block;
   text-align: right;
   float: right;
+}
+
+/* line 184, ../scss/screen.scss */
+div.logo {
+  position: relative;
+  margin: 10px auto;
+  width: auto;
+  left: auto;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  /* line 195, ../scss/screen.scss */
+  article.page-curl {
+    width: 80%;
+  }
 }
