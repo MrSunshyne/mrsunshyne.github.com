@@ -334,7 +334,7 @@ h1 {
   font-family: 'Medula One', cursive;
   font-size: 60px;
   font-weight: 100;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 p {
   text-align: justify;

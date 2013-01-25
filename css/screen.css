@@ -1,0 +1,188 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+/* line 7, ../scss/screen.scss */
+.page-curl {
+  background: #FFFFFF;
+  background: -moz-linear-gradient(0deg, whitesmoke 0%, white 25%, white 75%, whitesmoke 100%);
+  background: -ms-linear-gradient(0deg, whitesmoke 0%, white 25%, white 75%, whitesmoke 100%);
+  background: -webkit-linear-gradient(0deg, whitesmoke 0%, white 25%, white 75%, whitesmoke 100%);
+  background: linear-gradient(0deg, #f5f5f5 0%, #ffffff 25%, #ffffff 75%, #f5f5f5 100%);
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  margin: 10px auto 50px;
+  padding: 15px;
+  position: relative;
+  width: 800px;
+}
+
+/* line 26, ../scss/screen.scss */
+.page-curl:before, .page-curl:after {
+  background: none;
+  bottom: 12px;
+  -moz-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+  content: "";
+  height: 10px;
+  left: 12px;
+  position: absolute;
+  width: 40%;
+  z-index: -1;
+  -moz-transform: skew(-4deg) rotate(-4deg);
+  -webkit-transform: skew(-4deg) rotate(-4deg);
+  transform: skew(-4deg) rotate(-4deg);
+}
+
+/* line 43, ../scss/screen.scss */
+.page-curl:after {
+  -moz-transform: skew(4deg) rotate(4deg);
+  -webkit-transform: skew(4deg) rotate(4deg);
+  transform: skew(4deg) rotate(4deg);
+  left: auto;
+  right: 12px;
+}
+
+/* line 51, ../scss/screen.scss */
+.page-curl.shadow-left {
+  background: -moz-linear-gradient(0deg, whitesmoke 0%, white 50%) !important;
+  background: -ms-linear-gradient(0deg, whitesmoke 0%, white 50%) !important;
+  background: -webkit-linear-gradient(0deg, whitesmoke 0%, white 50%) !important;
+  background: linear-gradient(0deg, #f5f5f5 0%, #ffffff 50%) !important;
+}
+
+/* line 58, ../scss/screen.scss */
+.page-curl.shadow-right {
+  background: -moz-linear-gradient(0deg, white 50%, whitesmoke 100%) !important;
+  background: -ms-linear-gradient(0deg, white 50%, whitesmoke 100%) !important;
+  background: -webkit-linear-gradient(0deg, white 50%, whitesmoke 100%) !important;
+  background: linear-gradient(0deg, #ffffff 50%, #f5f5f5 100%) !important;
+}
+
+/* line 65, ../scss/screen.scss */
+.shadow-bottom:before, .shadow-bottom:after {
+  top: auto;
+  bottom: 12px;
+  -moz-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* line 73, ../scss/screen.scss */
+.shadow-left:after {
+  display: none;
+}
+
+/* line 77, ../scss/screen.scss */
+.shadow-right:before {
+  display: none;
+}
+
+/* line 81, ../scss/screen.scss */
+.shadow-top-bottom.shadow-left:after {
+  display: block;
+  bottom: auto;
+  top: 15px;
+  right: auto;
+  left: 12px;
+  -moz-box-shadow: 0 -10px 12px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 -10px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -10px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* line 92, ../scss/screen.scss */
+.shadow-top-bottom.shadow-right:before {
+  display: block;
+  bottom: auto;
+  top: 15px;
+  right: 12px;
+  left: auto;
+  -moz-box-shadow: 0 -10px 12px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 -10px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -10px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* line 103, ../scss/screen.scss */
+.pad {
+  padding-left: 25px;
+}
+
+/* Typography */
+/* line 108, ../scss/screen.scss */
+h1, h2 {
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Trebuchet MS' , sans-serif;
+}
+
+/* line 115, ../scss/screen.scss */
+h1 {
+  text-align: center;
+  font-size: 48px;
+  text-shadow: 0 -1px 0 black;
+  color: #444;
+}
+
+/* line 125, ../scss/screen.scss */
+h2 {
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  font-weight: 600;
+  color: #444;
+}
+/* line 127, ../scss/screen.scss */
+h2:first-child {
+  padding-top: 20px;
+}
+/* line 136, ../scss/screen.scss */
+h2 span {
+  padding-left: 10px;
+  font-style: blique;
+  color: #777;
+}
+
+/* line 144, ../scss/screen.scss */
+h3 {
+  margin: 0;
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+}
+
+/* line 151, ../scss/screen.scss */
+p {
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Lists */
+/* line 159, ../scss/screen.scss */
+article {
+  padding-top: 10px;
+  margin-top: 10;
+}
+/* line 162, ../scss/screen.scss */
+article ul {
+  margin-bottom: 30px;
+}
+/* line 164, ../scss/screen.scss */
+article ul li {
+  line-height: 30px;
+  font-size: 12px;
+}
+/* line 171, ../scss/screen.scss */
+article ul.results li {
+  width: 150px;
+  list-style: none;
+}
+/* line 174, ../scss/screen.scss */
+article ul.results li span {
+  width: 30px;
+  display: inline-block;
+  text-align: right;
+  float: right;
+}
