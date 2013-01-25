@@ -251,6 +251,46 @@ header{
 	}
 }
 
+
+// <div class="skills-container">
+// <div class="skill">
+//   <h3>Programming</h3>
+//   <ul>
+//     <li>
+//       <h4>HTML/HTML5</h4>
+//       <span class="lvl6"></span>
+
+.skills-container{}
+.skill{
+	h3{}
+	ul{
+		li{
+			list-style: none;
+			margin-left:0;
+			width: 300px;	
+			height: 30px;
+			line-height:30px;		
+			@include clearfix;
+			padding-bottom: 5px;
+			h4{
+				width:100px;
+				margin:0;padding:0;
+				display: block;
+				vertical-align: middle;
+				float:left;
+			}
+			span{
+				display: block;
+				width: 180px;
+				height: 30px;
+				background: green;
+				float:right;
+			}
+		}
+	}
+}
+
+
 /* Responsive */
 
 @media (max-width: 900px ) {

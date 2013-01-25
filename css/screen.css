@@ -258,9 +258,38 @@ header .email {
   float: left;
 }
 
+/* line 267, ../scss/screen.scss */
+.skill ul li {
+  list-style: none;
+  margin-left: 0;
+  width: 300px;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  *zoom: 1;
+  padding-bottom: 5px;
+}
+/* line 275, ../scss/screen.scss */
+.skill ul li h4 {
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  vertical-align: middle;
+  float: left;
+}
+/* line 282, ../scss/screen.scss */
+.skill ul li span {
+  display: block;
+  width: 180px;
+  height: 30px;
+  background: green;
+  float: right;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
-  /* line 257, ../scss/screen.scss */
+  /* line 297, ../scss/screen.scss */
   article.page-curl {
     width: 80%;
   }
