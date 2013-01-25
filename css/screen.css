@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
-/* line 7, ../scss/screen.scss */
+/* line 5, ../scss/screen.scss */
 .page-curl {
   background: #FFFFFF;
   background: -moz-linear-gradient(0deg, whitesmoke 0%, white 25%, white 75%, whitesmoke 100%);
@@ -18,7 +18,7 @@
   width: 800px;
 }
 
-/* line 26, ../scss/screen.scss */
+/* line 24, ../scss/screen.scss */
 .page-curl:before, .page-curl:after {
   background: none;
   bottom: 12px;
@@ -36,7 +36,7 @@
   transform: skew(-4deg) rotate(-4deg);
 }
 
-/* line 43, ../scss/screen.scss */
+/* line 41, ../scss/screen.scss */
 .page-curl:after {
   -moz-transform: skew(4deg) rotate(4deg);
   -webkit-transform: skew(4deg) rotate(4deg);
@@ -45,7 +45,7 @@
   right: 12px;
 }
 
-/* line 51, ../scss/screen.scss */
+/* line 49, ../scss/screen.scss */
 .page-curl.shadow-left {
   background: -moz-linear-gradient(0deg, whitesmoke 0%, white 50%) !important;
   background: -ms-linear-gradient(0deg, whitesmoke 0%, white 50%) !important;
@@ -53,7 +53,7 @@
   background: linear-gradient(0deg, #f5f5f5 0%, #ffffff 50%) !important;
 }
 
-/* line 58, ../scss/screen.scss */
+/* line 56, ../scss/screen.scss */
 .page-curl.shadow-right {
   background: -moz-linear-gradient(0deg, white 50%, whitesmoke 100%) !important;
   background: -ms-linear-gradient(0deg, white 50%, whitesmoke 100%) !important;
@@ -61,7 +61,7 @@
   background: linear-gradient(0deg, #ffffff 50%, #f5f5f5 100%) !important;
 }
 
-/* line 65, ../scss/screen.scss */
+/* line 63, ../scss/screen.scss */
 .shadow-bottom:before, .shadow-bottom:after {
   top: auto;
   bottom: 12px;
@@ -70,17 +70,17 @@
   box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* line 73, ../scss/screen.scss */
+/* line 71, ../scss/screen.scss */
 .shadow-left:after {
   display: none;
 }
 
-/* line 77, ../scss/screen.scss */
+/* line 75, ../scss/screen.scss */
 .shadow-right:before {
   display: none;
 }
 
-/* line 81, ../scss/screen.scss */
+/* line 79, ../scss/screen.scss */
 .shadow-top-bottom.shadow-left:after {
   display: block;
   bottom: auto;
@@ -92,7 +92,7 @@
   box-shadow: 0 -10px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* line 92, ../scss/screen.scss */
+/* line 90, ../scss/screen.scss */
 .shadow-top-bottom.shadow-right:before {
   display: block;
   bottom: auto;
@@ -104,13 +104,18 @@
   box-shadow: 0 -10px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* line 103, ../scss/screen.scss */
+/* line 100, ../scss/screen.scss */
 .pad {
   padding-left: 25px;
 }
 
+/* line 104, ../scss/screen.scss */
+.banner {
+  background: black;
+}
+
 /* Typography */
-/* line 108, ../scss/screen.scss */
+/* line 109, ../scss/screen.scss */
 h1, h2 {
   font-size: 24px;
   padding: 0;
@@ -118,33 +123,32 @@ h1, h2 {
   font-family: 'Open Sans' , sans-serif;
 }
 
-/* line 115, ../scss/screen.scss */
+/* line 116, ../scss/screen.scss */
 h1 {
   text-align: left;
-  font-size: 48px;
-  text-shadow: 0 -1px 0 black;
+  font-size: 32px;
   color: #444;
 }
 
-/* line 125, ../scss/screen.scss */
+/* line 126, ../scss/screen.scss */
 h2 {
   font-size: 16px;
   letter-spacing: 0.7px;
   font-weight: 600;
   color: #444;
 }
-/* line 127, ../scss/screen.scss */
+/* line 128, ../scss/screen.scss */
 h2:first-child {
   padding-top: 20px;
 }
-/* line 136, ../scss/screen.scss */
+/* line 137, ../scss/screen.scss */
 h2 span {
   padding-left: 10px;
   font-style: blique;
   color: #777;
 }
 
-/* line 144, ../scss/screen.scss */
+/* line 145, ../scss/screen.scss */
 h3 {
   margin: 0;
   font-size: 22px;
@@ -152,7 +156,7 @@ h3 {
   font-weight: 900;
 }
 
-/* line 151, ../scss/screen.scss */
+/* line 152, ../scss/screen.scss */
 p {
   font-family: 'Open Sans', sans-serif;
   text-align: left;
@@ -160,26 +164,26 @@ p {
 }
 
 /* Lists */
-/* line 159, ../scss/screen.scss */
+/* line 160, ../scss/screen.scss */
 article {
   padding-top: 10px;
   margin-top: 10;
 }
-/* line 162, ../scss/screen.scss */
+/* line 164, ../scss/screen.scss */
 article ul {
   margin-bottom: 30px;
 }
-/* line 164, ../scss/screen.scss */
+/* line 166, ../scss/screen.scss */
 article ul li {
   line-height: 30px;
   font-size: 12px;
 }
-/* line 171, ../scss/screen.scss */
+/* line 173, ../scss/screen.scss */
 article ul.results li {
   width: 150px;
   list-style: none;
 }
-/* line 174, ../scss/screen.scss */
+/* line 176, ../scss/screen.scss */
 article ul.results li span {
   width: 30px;
   display: inline-block;
@@ -187,17 +191,76 @@ article ul.results li span {
   float: right;
 }
 
-/* line 184, ../scss/screen.scss */
+/* line 185, ../scss/screen.scss */
+.holder {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 189, ../scss/screen.scss */
 div.logo {
   position: relative;
-  margin: 10px auto;
-  width: auto;
+  margin: 0px auto;
+  width: 800px;
   left: auto;
+  font-size: 50px;
+}
+
+/* line 199, ../scss/screen.scss */
+header .logo {
+  font-family: "Open Sans";
+  font-size: 24px;
+  text-align: left;
+}
+/* line 204, ../scss/screen.scss */
+header .logo em {
+  font-style: normal;
+  font-size: 30px;
+}
+/* line 211, ../scss/screen.scss */
+header .email {
+  display: inline-block;
+  text-align: right;
+  float: right;
+  font-size: 18px;
+}
+
+/* line 220, ../scss/screen.scss */
+.job-description h1 {
+  text-align: center;
+  font-size: 72px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* line 230, ../scss/screen.scss */
+.profile-description {
+  width: 50%;
+  float: left;
+  display: inline-block;
+}
+
+/* line 238, ../scss/screen.scss */
+.detailed-profile {
+  width: 40%;
+  display: inline-block;
+  float: right;
+}
+/* line 243, ../scss/screen.scss */
+.detailed-profile fieldset {
+  border: none;
+  font-size: 14px;
+}
+/* line 246, ../scss/screen.scss */
+.detailed-profile fieldset label {
+  text-align: left;
+  width: 70px;
+  float: left;
 }
 
 /* Responsive */
 @media (max-width: 900px) {
-  /* line 195, ../scss/screen.scss */
+  /* line 257, ../scss/screen.scss */
   article.page-curl {
     width: 80%;
   }

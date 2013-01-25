@@ -295,37 +295,6 @@ div.logo {
   -webkit-font-smoothing: antialiased !important;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   color: #eee;
-  /*Firefox*/
-
-  -moz-animation-name: wiggle;
-  -moz-animation-duration: 4s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: ease-in-out;
-  /*Chrome Safari*/
-
-  -webkit-animation-name: wiggle;
-  -webkit-animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 0s;
-  /*Opera*/
-
-  -o-animation-name: wiggle;
-  -o-animation-duration: 4s;
-  -o-animation-iteration-count: infinite;
-  -o-animation-timing-function: ease-in-out;
-  /*Microsoft*/
-
-  -ms-animation-name: wiggle;
-  -ms-animation-duration: 4s;
-  -ms-animation-iteration-count: infinite;
-  -ms-animation-timing-function: ease-in-out;
-  /*The future*/
-
-  animation-name: wiggle;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
 }
 /*
 	Tyopgraphy
@@ -334,7 +303,7 @@ h1 {
   font-family: 'Medula One', cursive;
   font-size: 60px;
   font-weight: 100;
-  /*margin-bottom: 20px;*/
+  margin-bottom: 20px;
 }
 p {
   text-align: justify;
