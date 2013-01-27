@@ -260,7 +260,7 @@ header .email {
 
 /* line 259, ../scss/screen.scss */
 .profile-description {
-  width: 400px;
+  width: 460px;
   float: left;
   display: inline-block;
 }
@@ -563,7 +563,9 @@ footer div {
 
 @media (max-width: 900px) {
   /* line 544, ../scss/screen.scss */
-  article.page-curl {
+  article.page-curl, .detailed-profile, .profile-description, .skill, .ca-menu li, .ca-menu {
     width: 80%;
+    margin: 0 auto;
+    float: none;
   }
 }

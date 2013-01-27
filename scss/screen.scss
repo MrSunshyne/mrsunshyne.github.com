@@ -257,7 +257,7 @@ header{
 
 
 .profile-description{
-	width: 400px;
+	width: 460px;
 	float:left;
 	display:inline-block;
 
@@ -541,7 +541,9 @@ footer{
 }
 
 @media (max-width: 900px ) {
-	article.page-curl{
+	article.page-curl, .detailed-profile, .profile-description, .skill, .ca-menu li , .ca-menu {
 		width: 80%;
+		margin:0 auto;
+		float:none;
 	}
 }
