@@ -6,7 +6,7 @@ $(document).ready(function(){
 function MenuController(){
 	var me = this;
 	links = $('.main-menu a');	
-	$('article').fadeOut();
+	//$('article').fadeOut();
 	links.each(function(){			
 		$(this).bind('click', { link : $(this)}, function(e){
 			e.preventDefault();

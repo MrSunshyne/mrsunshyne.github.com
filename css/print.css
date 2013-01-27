@@ -1,0 +1,14 @@
+/* line 1, ../scss/print.scss */
+article {
+  display: block;
+}
+
+/* line 5, ../scss/print.scss */
+nav, main-menu {
+  display: none;
+}
+
+/* line 9, ../scss/print.scss */
+article {
+  box-shadow: none;
+}
