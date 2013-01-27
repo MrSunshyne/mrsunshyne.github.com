@@ -128,15 +128,15 @@ h1, h2 {
   font-size: 24px;
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans' , sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* line 127, ../scss/screen.scss */
 article h1 {
   text-align: left;
   font-size: 28px;
-  border-left: 20px solid #62AFFD;
-  border-bottom: 1px solid #62AFFD;
+  border-left: 20px solid #62affd;
+  border-bottom: 1px solid #62affd;
   text-indent: 10px;
   color: #444;
   margin-bottom: 20px;
@@ -161,13 +161,13 @@ article h2 span {
 h3 {
   margin: 0;
   font-size: 22px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 900;
 }
 
 /* line 168, ../scss/screen.scss */
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: left;
   font-size: 14px;
 }
@@ -250,46 +250,47 @@ header .email {
   transition: all 0.5s ease;
   text-align: center;
   font-size: 72px;
-  font-weight: 600;
+  font-weight: 100;
   color: #000;
 }
-/* line 253, ../scss/screen.scss */
+/* line 255, ../scss/screen.scss */
 .job-description h3 {
   display: none;
+  font-family: "Medula One", cursive;
 }
 
-/* line 259, ../scss/screen.scss */
+/* line 263, ../scss/screen.scss */
 .profile-description {
   width: 460px;
   float: left;
   display: inline-block;
 }
 
-/* line 267, ../scss/screen.scss */
+/* line 271, ../scss/screen.scss */
 .detailed-profile {
   width: 40%;
   display: inline-block;
   float: right;
 }
-/* line 272, ../scss/screen.scss */
+/* line 276, ../scss/screen.scss */
 .detailed-profile fieldset {
   border: none;
   font-size: 14px;
 }
-/* line 275, ../scss/screen.scss */
+/* line 279, ../scss/screen.scss */
 .detailed-profile fieldset label {
   text-align: left;
   width: 70px;
   float: left;
 }
 
-/* line 292, ../scss/screen.scss */
+/* line 296, ../scss/screen.scss */
 .skills-container {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 296, ../scss/screen.scss */
+/* line 300, ../scss/screen.scss */
 .skill {
   float: left;
   width: 50%;
@@ -297,13 +298,13 @@ header .email {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 300, ../scss/screen.scss */
+/* line 304, ../scss/screen.scss */
 .skill h3 {
   font-family: "Reenie Beanie";
   text-align: center;
   font-size: 36px;
 }
-/* line 306, ../scss/screen.scss */
+/* line 310, ../scss/screen.scss */
 .skill ul li {
   list-style: none;
   margin-left: 0;
@@ -314,7 +315,7 @@ header .email {
   *zoom: 1;
   padding-bottom: 5px;
 }
-/* line 314, ../scss/screen.scss */
+/* line 318, ../scss/screen.scss */
 .skill ul li h4 {
   width: 100px;
   margin: 0;
@@ -323,7 +324,7 @@ header .email {
   vertical-align: middle;
   float: left;
 }
-/* line 321, ../scss/screen.scss */
+/* line 325, ../scss/screen.scss */
 .skill ul li span {
   display: block;
   width: 200px;
@@ -331,36 +332,36 @@ header .email {
   background: url("../images/bg/bullet.png") no-repeat;
   float: right;
 }
-/* line 330, ../scss/screen.scss */
+/* line 334, ../scss/screen.scss */
 .skill ul li span.lvl6 {
   background-position: 0px 0px;
 }
-/* line 333, ../scss/screen.scss */
+/* line 337, ../scss/screen.scss */
 .skill ul li span.lvl5 {
   background-position: 0px -32px;
 }
-/* line 336, ../scss/screen.scss */
+/* line 340, ../scss/screen.scss */
 .skill ul li span.lvl4 {
   background-position: 0px -64px;
 }
-/* line 339, ../scss/screen.scss */
+/* line 343, ../scss/screen.scss */
 .skill ul li span.lvl3 {
   background-position: 0px -96px;
 }
-/* line 342, ../scss/screen.scss */
+/* line 346, ../scss/screen.scss */
 .skill ul li span.lvl2 {
   background-position: 0px -128px;
 }
-/* line 345, ../scss/screen.scss */
+/* line 349, ../scss/screen.scss */
 .skill ul li span.lvl1 {
   background-position: 0px -160px;
 }
 
-/* line 354, ../scss/screen.scss */
+/* line 358, ../scss/screen.scss */
 .main-menu {
   width: 100%;
 }
-/* line 356, ../scss/screen.scss */
+/* line 360, ../scss/screen.scss */
 .main-menu ul {
   display: inline-block;
   text-align: center;
@@ -368,7 +369,7 @@ header .email {
   margin: 0;
   padding: 0;
 }
-/* line 361, ../scss/screen.scss */
+/* line 365, ../scss/screen.scss */
 .main-menu ul li {
   display: inline-block;
   text-align: center;
@@ -382,18 +383,18 @@ header .email {
   font-style: normal;
 }
 
-/* line 379, ../scss/screen.scss */
+/* line 383, ../scss/screen.scss */
 .ca-menu {
   padding: 0;
   margin: 20px auto;
   width: 250px;
 }
-/* line 384, ../scss/screen.scss */
+/* line 388, ../scss/screen.scss */
 .ca-menu h2 {
   margin-top: 0;
 }
 
-/* line 388, ../scss/screen.scss */
+/* line 392, ../scss/screen.scss */
 .ca-menu li {
   width: 250px;
   height: 100px;
@@ -417,7 +418,7 @@ header .email {
   transition: all 300ms ease-in-out;
 }
 
-/* line 409, ../scss/screen.scss */
+/* line 413, ../scss/screen.scss */
 .ca-menu li a {
   text-align: left;
   width: 100%;
@@ -427,12 +428,12 @@ header .email {
   position: relative;
 }
 
-/* line 417, ../scss/screen.scss */
+/* line 421, ../scss/screen.scss */
 .ca-icon {
-  font-family: 'WebSymbolsRegular', cursive;
+  font-family: "WebSymbolsRegular", cursive;
   font-size: 30px;
   color: #333;
-  text-shadow: 0px 0px 1px #333;
+  text-shadow: 0px 0px 1px #333333;
   line-height: 90px;
   position: absolute;
   width: 60px;
@@ -445,7 +446,7 @@ header .email {
   transition: all 300ms linear;
 }
 
-/* line 433, ../scss/screen.scss */
+/* line 437, ../scss/screen.scss */
 .ca-content {
   position: absolute;
   left: 90px;
@@ -454,7 +455,7 @@ header .email {
   top: 20px;
 }
 
-/* line 440, ../scss/screen.scss */
+/* line 444, ../scss/screen.scss */
 .ca-main {
   font-size: 30px;
   -webkit-transition: all 300ms linear;
@@ -464,7 +465,7 @@ header .email {
   transition: all 300ms linear;
 }
 
-/* line 448, ../scss/screen.scss */
+/* line 452, ../scss/screen.scss */
 .ca-sub {
   font-size: 11px;
   color: #666;
@@ -472,12 +473,12 @@ header .email {
   font-family: "open sans";
 }
 
-/* line 454, ../scss/screen.scss */
+/* line 458, ../scss/screen.scss */
 .ca-menu li:hover, .ca-menu li.active {
   background-color: #000;
 }
 
-/* line 457, ../scss/screen.scss */
+/* line 461, ../scss/screen.scss */
 .ca-menu li:hover .ca-icon, .ca-menu li.active .ca-icon {
   color: #5EADFD;
   font-size: 120px;
@@ -489,13 +490,13 @@ header .email {
   transform: rotate(20deg);
 }
 
-/* line 467, ../scss/screen.scss */
+/* line 471, ../scss/screen.scss */
 .ca-menu li:hover .ca-main, .ca-menu li.active .ca-main {
   color: #5EADFD;
   opacity: 0.8;
 }
 
-/* line 471, ../scss/screen.scss */
+/* line 475, ../scss/screen.scss */
 .ca-menu li:hover .ca-sub, .ca-menu li.active .ca-sub {
   color: #fff;
   opacity: 0.8;
@@ -503,31 +504,31 @@ header .email {
 
 /* Target menu */
 /* Responsive */
-/* line 495, ../scss/screen.scss */
+/* line 499, ../scss/screen.scss */
 .loadstate h1 {
   font-size: 90px;
   padding: 1em 0;
 }
-/* line 500, ../scss/screen.scss */
+/* line 504, ../scss/screen.scss */
 .loadstate h3 {
   display: block;
   text-align: center;
   padding: 0 0 4em 0;
 }
 
-/* line 508, ../scss/screen.scss */
+/* line 512, ../scss/screen.scss */
 .project-box {
   display: inline-block;
   padding: 10px;
   text-align: center;
 }
 
-/* line 514, ../scss/screen.scss */
+/* line 518, ../scss/screen.scss */
 footer {
   position: relative;
   bottom: 0;
 }
-/* line 518, ../scss/screen.scss */
+/* line 522, ../scss/screen.scss */
 footer div {
   width: 100%;
   padding: 1em 0;
@@ -535,12 +536,12 @@ footer div {
   font-family: "Reenie Beanie";
 }
 
-/* line 526, ../scss/screen.scss */
+/* line 530, ../scss/screen.scss */
 .toggler {
   cursor: pointer;
 }
 
-/* line 530, ../scss/screen.scss */
+/* line 534, ../scss/screen.scss */
 .toggler + div, .toggler + ul {
   height: 0;
   opacity: 0;
@@ -550,7 +551,7 @@ footer div {
   transition: all 0.2s ease;
 }
 
-/* line 536, ../scss/screen.scss */
+/* line 540, ../scss/screen.scss */
 .toggler.active + div, .toggler.active + ul {
   opacity: 1;
   height: auto;
@@ -562,7 +563,7 @@ footer div {
 }
 
 @media (max-width: 900px) {
-  /* line 544, ../scss/screen.scss */
+  /* line 548, ../scss/screen.scss */
   article.page-curl, .detailed-profile, .profile-description, .skill, .ca-menu li, .ca-menu {
     width: 80%;
     margin: 0 auto;
