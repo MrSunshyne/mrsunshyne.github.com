@@ -12,8 +12,8 @@
 	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="js/rajnikant.js"></script>
-  	<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+	<script src="js/javascript.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<link rel="stylesheet" type="text/css" href="css/screen.css" />
 
@@ -33,13 +33,48 @@
 
   </header>
 
-  <section class="job-description">
+  <section class="job-description loadstate">
     <h1>Front-end Developer</h1>
+    <h3>I bring life to design.</h3>
   </section>
+
+  <nav class="main-menu">
+    <div class="holder">
+      <ul class="ca-menu">
+        <li>
+            <a href="#profile">
+              <span class="ca-icon">U</span>
+              <div class="ca-content">
+                  <h2 class="ca-main">Profile</h2>
+                  <h3 class="ca-sub">about me</h3>
+              </div>             
+            </a>
+        </li>
+        <li>
+          <a href="#resume">
+            <span class="ca-icon">A</span>
+              <div class="ca-content">
+                  <h2 class="ca-main">Resume</h2>
+                  <h3 class="ca-sub">Academic & Proffesional</h3>
+              </div>
+          </a>
+        </li>
+        <li>
+          <a href="#portfolio">
+            <span class="ca-icon">F</span>
+              <div class="ca-content">
+                  <h2 class="ca-main">Portfolio</h2>
+                  <h3 class="ca-sub">Stuff I did</h3>
+              </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   
 
   <section class="page">
-  	<article class="page-curl shadow-bottom shadow-right">
+  	<article id="profile" class="page-curl shadow-bottom shadow-right">
   		<h1>Profile</h1>
       <div class="holder">
         <div class="profile-description">
@@ -58,35 +93,97 @@
           <fieldset><label>Age: </label>23</fieldset>
           <fieldset><label>Email: </label>sandeep.ramgolam@gmail.com</fieldset>
           <fieldset><label>Phone: </label>74812254</fieldset>
+          <fieldset><label>Driving License: </label>Private Car</fieldset>
           <fieldset><label>Website: </label>www.sunshynes.net</fieldset>
         </div>
-
       </div>
+
+      <h1>Skills</h1>
+        <div class="skills-container">
+          <div class="skill">
+            <h3>Code</h3>
+            <ul>
+              <li>
+                <h4>WebStandards</h4>
+                <span class="lvl5"></span>
+              </li>              
+              <li>
+                <h4>HTML/HTML5</h4>
+                <span class="lvl5"></span>
+              </li>
+              <li>
+                <h4>CSS/CSS3</h4>
+                <span class="lvl5"></span>
+              </li>
+              <li>
+                <h4>JavaScript</h4>
+                <span class="lvl5"></span>
+              </li>
+              <li>
+                <h4>PHP</h4>
+                <span class="lvl3"></span>
+              </li>
+              <li>
+                <h4>Python</h4>
+                <span class="lvl3"></span>
+              </li>
+            </ul>
+          </div>
+          <div class="skill">
+            <h3>Design</h3>
+            <ul>
+              <li>
+                <h4>Fireworks</h4>
+                <span class="lvl5"></span>
+              </li>
+              <li>
+                <h4>Photoshop</h4>
+                <span class="lvl5"></span>
+              </li>
+              <li  title="Just kidding :P We all started here!">
+                <h4>Paint</h4>
+                <span class="lvl6"></span>
+              </li>              
+              <li>
+                <h4>GIMP</h4>
+                <span class="lvl3"></span>
+              </li>
+              <li>
+                <h4>Illustrator</h4>
+                <span class="lvl3"></span>
+              </li>
+              <li>
+                <h4>SketchUp</h4>
+                <span class="lvl3"></span>
+              </li>            
+            </ul>
+          </div>
+          <div class="skill">
+            <h3>Frameworks & Libraries</h3>
+            <ul>
+              <li>
+                <h4>jQuery</h4>
+                <span class="lvl5"></span>
+              </li>
+              <li>
+                <h4>CoffeScript</h4>
+                <span class="lvl5"></span>
+              </li>
+              <li>
+                <h4>Smarty</h4>
+                <span class="lvl4"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
   	</article>
 
-  	<article class="page-curl shadow-bottom shadow-right">
-
-      <div class="skills-container">
-        <div class="skill">
-          <h3>Programming</h3>
-          <ul>
-            <li>
-              <h4>HTML/HTML5</h4>
-              <span class="lvl6"></span>
-            </li>
-            <li>
-              <h4>CSS/CSS3</h4>
-              <span class="lvl5"></span>
-            </li>
-          </ul>
-        </div>
-      </div>
-
+  	<article id="resume" class="page-curl shadow-bottom shadow-right"> 
       <div class="resume-group">    
         <h1>Education</h1>      
         <div class="pad">
 
-          <h2>University of Mauritius<span>- 2007 - (High School)</span></h2>
+          <h2>University of Mauritius<span>- 2009 - 2012 (High School)</span></h2>
           <ul>
             <li>BSc(Hons) Computer Science and Engineering</li>
             <li>
@@ -95,14 +192,14 @@
                </li>
           </ul>           
 
-          <h2>Royal College Port Louis<span>- 2007 - (High School)</span></h2>
+          <h2>Royal College Port Louis<span>- 2007 - 2008 (Cambridge Higher School Certificate )</span></h2>
           <ul class="results">
             <li>Math <span>B</span> </li>            
             <li>Computing <span>B</span> </li>
             <li>Physics <span>C</span> </li>
           </ul>
 
-          <h2>Adolphe de Plevitz GrandBay<span>- 2005 - (High School)</span></h2>
+          <h2>Adolphe de Plevitz GrandBay<span>- 2005 - (Cambridge Ordinary Level)</span></h2>
           <ul class="results">
             <li>Computer <span>1</span> </li>
             <li>Design & Technology <span>1</span> </li>
@@ -142,7 +239,7 @@
   		</div>
   	</article>  	
 
-  	<article class="page-curl shadow-bottom shadow-right">
+  	<article id="portfolio" class="page-curl shadow-bottom shadow-right">
   		<h1>Portfolio</h1>
       <ul>
         <li>Halpin Consultings</li>
@@ -152,8 +249,8 @@
   	</article>
   </section>
 
-  <footer class="banner">
-    <div class="logo">&copy; Mr.Sunshyne</div>  
+  <footer class="">
+    <div class="">&copy; Mr.Sunshyne</div>  
   </footer>
 
 </body>

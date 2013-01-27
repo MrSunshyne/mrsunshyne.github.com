@@ -1,6 +1,16 @@
 @import 'compass';
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('websymbols/websymbols-regular-webfont.eot');
+    src: url('websymbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('websymbols/websymbols-regular-webfont.woff') format('woff'),
+         url('websymbols/websymbols-regular-webfont.ttf') format('truetype'),
+         url('websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .page-curl {
 	background: #FFFFFF;
@@ -111,23 +121,29 @@ h1, h2{
 	padding:0;
 	margin: 0;
 	font-family: 'Open Sans' , sans-serif;
+	
 }
 
-h1{
+article h1{
 	text-align     : left;
 	//padding-top : 40px;
-	font-size: 32px;
+	font-size: 48px;
+	
 	//
-	color: #444;
-	//border-bottom: 2px dashed grey;
-	//background     : url(http://www.dreamtemplate.com/dreamcodes/divider/images/tsc_divider7.png) no-repeat bottom center;
+
+	border-left     : 20px solid #62AFFD;
+	border-bottom   : 1px solid #62AFFD;
+	text-indent     : 10px;
+	color           : #444;
+	margin-bottom  : 20px;
+	//border-bottom : 2px dashed grey;
+	//background    : url(http://www.dreamtemplate.com/dreamcodes/divider/images/tsc_divider7.png) no-repeat bottom center;
 }
 
-h2{
+article h2{
 
-	&:first-child{
-		padding-top:20px;
-	}
+	padding-top:20px;
+
 
 	font-size: 16px;
 	letter-spacing: 0.7px;
@@ -170,6 +186,7 @@ article{
 	}
 
 	ul.results {
+		display:none;
 		li{
 			width: 150px;
 			list-style: none;
@@ -181,6 +198,10 @@ article{
 			}
 		}
 	}	
+
+	.resume-group{
+		margin-bottom: 50px;
+	}
 }
 .holder{
 	@include clearfix;
@@ -217,18 +238,26 @@ header{
 }
 
 .job-description{
+
+
+
 	h1{
+		@include transition(all 0.5s ease);
 		text-align: center;
 		font-size: 72px;
 		font-weight: 600;
 		color: #000;
 		//text-shadow: -1px -1px 0px #000;		
 	}
+
+	h3{
+		display:none;
+	}
 }
 
 
 .profile-description{
-	width: 50%;
+	width: 400px;
 	float:left;
 	display:inline-block;
 
@@ -260,9 +289,19 @@ header{
 //       <h4>HTML/HTML5</h4>
 //       <span class="lvl6"></span>
 
-.skills-container{}
+.skills-container{
+	@include clearfix;
+
+}
 .skill{
-	h3{}
+	float:left;
+	width: 50%;
+	@include box-sizing('border-box');
+	h3{
+		font-family : "Reenie Beanie";
+		text-align  : center;
+		font-size   : 36px;
+	}
 	ul{
 		li{
 			list-style: none;
@@ -281,17 +320,202 @@ header{
 			}
 			span{
 				display: block;
-				width: 180px;
+				width: 200px;
 				height: 30px;
-				background: green;
+				background: url('../images/bg/bullet.png') no-repeat;
 				float:right;
+
+				$height:32px;
+
+				&.lvl6{
+					background-position: 0px (-($height * 0));
+				}				
+				&.lvl5{
+					background-position: 0px (-($height * 1));
+				}				
+				&.lvl4{
+					background-position: 0px (-($height * 2));
+				}				
+				&.lvl3{
+					background-position: 0px (-($height * 3));
+				}				
+				&.lvl2{
+					background-position: 0px (-($height * 4));
+				}				
+				&.lvl1{
+					background-position: 0px (-($height * 5));
+				}
 			}
 		}
 	}
 }
 
 
+.main-menu{
+	width: 100%;
+	ul{
+		display:inline-block;
+		text-align: center;
+		width: 100%;
+		margin:0;padding:0;
+		li{
+			display:inline-block;
+			text-align: center;
+		}
+	}
+}
+
+
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('websymbols/websymbols-regular-webfont.eot');
+    src: url('websymbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('websymbols/websymbols-regular-webfont.woff') format('woff'),
+        url('websymbols/websymbols-regular-webfont.ttf') format('truetype'),
+        url('websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.ca-menu{
+    padding:0;
+    margin:20px auto;
+    width: 250px;
+
+    h2{
+    	margin-top:0;
+    }
+}
+.ca-menu li{
+    width: 250px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    background: #fff;
+    @include box-shadow( 1px 1px 2px rgba(0,0,0,0.2) );
+
+    @include border-radius(5px);
+
+    margin-bottom: 4px;
+    -webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+// .ca-menu li:last-child{
+//     margin-bottom: 0px;
+// }
+.ca-menu li a{
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #333;
+    position: relative;
+}
+.ca-icon{
+    font-family: 'WebSymbolsRegular', cursive;
+    font-size: 30px;
+    color: #333;
+    text-shadow: 0px 0px 1px #333;
+    line-height: 90px;
+    position: absolute;
+    width: 60px;
+    left: 20px;
+    text-align: center;
+    -webkit-transition: all 300ms linear;
+	-moz-transition: all 300ms linear;
+	-o-transition: all 300ms linear;
+	-ms-transition: all 300ms linear;
+	transition: all 300ms linear; 
+}
+.ca-content{
+    position: absolute;
+    left: 90px;
+    width: 130px;
+    height: 60px;
+    top: 20px;
+}
+.ca-main{
+    font-size: 30px;
+    -webkit-transition: all 300ms linear;
+	-moz-transition: all 300ms linear;
+	-o-transition: all 300ms linear;
+	-ms-transition: all 300ms linear;
+	transition: all 300ms linear; 
+}
+.ca-sub{
+    font-size   : 11px;
+    color       : #666;
+    font-weight : 100;
+    font-family : "open sans";
+}
+.ca-menu li:hover, .ca-menu li.active{
+    background-color: #000;
+}
+.ca-menu li:hover .ca-icon, .ca-menu li.active .ca-icon{
+    color: #5EADFD;
+    font-size: 120px;
+    opacity: 0.2;
+    left: -20px;
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+.ca-menu li:hover .ca-main, .ca-menu li.active .ca-main{
+    color: #5EADFD;
+    opacity: 0.8;
+}
+.ca-menu li:hover .ca-sub, .ca-menu li.active .ca-sub{
+    color: #fff;
+    opacity: 0.8;
+}
+
+/* Target menu */
+
+
+// article {
+// 	display  : none;
+// 	position : absolute;
+// 	top      : 0;
+// 	left     : 0;
+// }
+
+// #profile, #resume, #portfolio{
+// 	&:target{
+// 		display:block;
+// 	}
+// }
+
 /* Responsive */
+
+.loadstate{
+	h1{
+		font-size:90px;
+		padding: 1em 0;
+	}
+
+	h3{
+		display:block;
+		text-align: center;
+		padding: 0 0 4em 0;
+	}
+
+}
+
+footer{
+	position:relative;
+	bottom:0;
+
+	div{
+		width: 100%;
+		padding: 1em 0;
+		text-align: center;
+		font-family: "Reenie Beanie";
+	}
+}
 
 @media (max-width: 900px ) {
 	article.page-curl{
