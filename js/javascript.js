@@ -24,6 +24,8 @@ function MenuController(){
 			
 	})
 
-	//me.togglemenu = 
+	$('.toggler').bind('click', function(){
+		$(this).toggleClass('active');
+	})
 
 }

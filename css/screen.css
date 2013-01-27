@@ -516,11 +516,18 @@ header .email {
 }
 
 /* line 508, ../scss/screen.scss */
+.project-box {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
+
+/* line 514, ../scss/screen.scss */
 footer {
   position: relative;
   bottom: 0;
 }
-/* line 512, ../scss/screen.scss */
+/* line 518, ../scss/screen.scss */
 footer div {
   width: 100%;
   padding: 1em 0;
@@ -528,8 +535,34 @@ footer div {
   font-family: "Reenie Beanie";
 }
 
+/* line 526, ../scss/screen.scss */
+.toggler {
+  cursor: pointer;
+}
+
+/* line 530, ../scss/screen.scss */
+.toggler + div, .toggler + ul {
+  height: 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+/* line 536, ../scss/screen.scss */
+.toggler.active + div, .toggler.active + ul {
+  opacity: 1;
+  height: auto;
+  display: block;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 @media (max-width: 900px) {
-  /* line 521, ../scss/screen.scss */
+  /* line 544, ../scss/screen.scss */
   article.page-curl {
     width: 80%;
   }

@@ -505,6 +505,12 @@ header{
 
 }
 
+.project-box{
+	display:inline-block;
+	padding: 10px;
+	text-align: center;
+}
+
 footer{
 	position:relative;
 	bottom:0;
@@ -515,6 +521,23 @@ footer{
 		text-align: center;
 		font-family: "Reenie Beanie";
 	}
+}
+
+.toggler{
+	cursor:pointer;
+}
+
+.toggler + div, .toggler + ul{
+	height:0;
+	opacity: 0;
+	@include transition(all .2s ease);
+}
+
+.toggler.active + div, .toggler.active + ul{
+	opacity: 1;
+	height: auto;
+	display:block;
+	@include transition(all .5s ease);
 }
 
 @media (max-width: 900px ) {
