@@ -12,3 +12,8 @@ nav, main-menu {
 article {
   box-shadow: none;
 }
+
+/* line 13, ../scss/print.scss */
+.job-description {
+  display: none;
+}
