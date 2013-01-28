@@ -128,15 +128,15 @@ h1, h2 {
   font-size: 24px;
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans' , sans-serif;
 }
 
 /* line 127, ../scss/screen.scss */
 article h1 {
   text-align: left;
   font-size: 28px;
-  border-left: 20px solid #62affd;
-  border-bottom: 1px solid #62affd;
+  border-left: 20px solid #62AFFD;
+  border-bottom: 1px solid #62AFFD;
   text-indent: 10px;
   color: #444;
   margin-bottom: 20px;
@@ -161,13 +161,13 @@ article h2 span {
 h3 {
   margin: 0;
   font-size: 22px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 900;
 }
 
 /* line 168, ../scss/screen.scss */
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: left;
   font-size: 14px;
 }
@@ -430,10 +430,10 @@ header .email {
 
 /* line 421, ../scss/screen.scss */
 .ca-icon {
-  font-family: "WebSymbolsRegular", cursive;
+  font-family: 'WebSymbolsRegular', cursive;
   font-size: 30px;
   color: #333;
-  text-shadow: 0px 0px 1px #333333;
+  text-shadow: 0px 0px 1px #333;
   line-height: 90px;
   position: absolute;
   width: 60px;
@@ -564,9 +564,22 @@ footer div {
 
 @media (max-width: 900px) {
   /* line 548, ../scss/screen.scss */
-  article.page-curl, .detailed-profile, .profile-description, .skill, .ca-menu li, .ca-menu {
+  article.page-curl, .detailed-profile, .profile-description, .skill, .ca-menu li, .ca-menu, div.logo {
     width: 80%;
-    margin: 0 auto;
     float: none;
+  }
+
+  /* line 554, ../scss/screen.scss */
+  .detailed-profile, .profile-description {
+    width: 100%;
+  }
+
+  /* line 558, ../scss/screen.scss */
+  div.logo {
+    text-align: center;
+  }
+  /* line 560, ../scss/screen.scss */
+  div.logo .email {
+    display: none;
   }
 }

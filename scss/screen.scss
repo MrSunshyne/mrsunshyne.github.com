@@ -545,9 +545,20 @@ footer{
 }
 
 @media (max-width: 900px ) {
-	article.page-curl, .detailed-profile, .profile-description, .skill, .ca-menu li , .ca-menu {
+	article.page-curl, .detailed-profile, .profile-description, .skill, .ca-menu li , .ca-menu , div.logo{
 		width: 80%;
-		margin:0 auto;
+		//margin:0 auto;
 		float:none;
+	}
+
+	.detailed-profile, .profile-description{
+		width: 100%;
+	}
+
+	div.logo{
+		text-align: center;
+		.email{
+			display:none;
+		}
 	}
 }
