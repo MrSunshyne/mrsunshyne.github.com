@@ -504,31 +504,31 @@ header .email {
 
 /* Target menu */
 /* Responsive */
-/* line 499, ../scss/screen.scss */
+/* line 521, ../scss/screen.scss */
 .loadstate h1 {
   font-size: 90px;
   padding: 1em 0;
 }
-/* line 504, ../scss/screen.scss */
+/* line 526, ../scss/screen.scss */
 .loadstate h3 {
   display: block;
   text-align: center;
   padding: 0 0 4em 0;
 }
 
-/* line 512, ../scss/screen.scss */
+/* line 534, ../scss/screen.scss */
 .project-box {
   display: inline-block;
   padding: 10px;
   text-align: center;
 }
 
-/* line 518, ../scss/screen.scss */
+/* line 540, ../scss/screen.scss */
 footer {
   position: relative;
   bottom: 0;
 }
-/* line 522, ../scss/screen.scss */
+/* line 544, ../scss/screen.scss */
 footer div {
   width: 100%;
   padding: 1em 0;
@@ -536,12 +536,12 @@ footer div {
   font-family: "Reenie Beanie";
 }
 
-/* line 530, ../scss/screen.scss */
+/* line 552, ../scss/screen.scss */
 .toggler {
   cursor: pointer;
 }
 
-/* line 534, ../scss/screen.scss */
+/* line 556, ../scss/screen.scss */
 .toggler + div, .toggler + ul {
   height: 0;
   opacity: 0;
@@ -551,7 +551,7 @@ footer div {
   transition: all 0.2s ease;
 }
 
-/* line 540, ../scss/screen.scss */
+/* line 562, ../scss/screen.scss */
 .toggler.active + div, .toggler.active + ul {
   opacity: 1;
   height: auto;
@@ -563,22 +563,22 @@ footer div {
 }
 
 @media (max-width: 900px) {
-  /* line 548, ../scss/screen.scss */
+  /* line 570, ../scss/screen.scss */
   article.page-curl, .detailed-profile, .profile-description, .skill, .ca-menu li, .ca-menu, div.logo {
     width: 80%;
     float: none;
   }
 
-  /* line 554, ../scss/screen.scss */
+  /* line 576, ../scss/screen.scss */
   .detailed-profile, .profile-description {
     width: 100%;
   }
 
-  /* line 558, ../scss/screen.scss */
+  /* line 580, ../scss/screen.scss */
   div.logo {
     text-align: center;
   }
-  /* line 560, ../scss/screen.scss */
+  /* line 582, ../scss/screen.scss */
   div.logo .email {
     display: none;
   }
