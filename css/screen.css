@@ -583,3 +583,56 @@ footer div {
     display: none;
   }
 }
+@media (max-width: 480px) {
+  /* line 590, ../scss/screen.scss */
+  .loadstate h1 {
+    font-size: 60px;
+  }
+
+  /* line 594, ../scss/screen.scss */
+  .job-description h1 {
+    font-size: 40px;
+  }
+
+  /* line 601, ../scss/screen.scss */
+  .profile-description img {
+    display: block;
+    margin: 0 auto;
+    padding: 25px;
+  }
+  /* line 607, ../scss/screen.scss */
+  .profile-description p {
+    display: block;
+    width: 100%;
+  }
+
+  /* line 614, ../scss/screen.scss */
+  .skill ul {
+    padding-left: 0;
+  }
+  /* line 618, ../scss/screen.scss */
+  .skill ul li span {
+    left: -40px;
+    position: relative;
+    -webkit-transform: scale(0.7, 0.7);
+    -moz-transform: scale(0.7, 0.7);
+    -ms-transform: scale(0.7, 0.7);
+    -o-transform: scale(0.7, 0.7);
+    transform: scale(0.7, 0.7);
+    -webkit-transform-origin: left center 50%;
+    -moz-transform-origin: left center 50%;
+    -ms-transform-origin: left center 50%;
+    -o-transform-origin: left center 50%;
+    transform-origin: left center 50%;
+  }
+
+  /* line 628, ../scss/screen.scss */
+  .project-box {
+    max-width: 100%;
+  }
+  /* line 630, ../scss/screen.scss */
+  .project-box img {
+    max-width: 100%;
+    height: auto;
+  }
+}
