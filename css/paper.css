@@ -1,0 +1,198 @@
+/* line 3, ../scss/paper.scss */
+.content-wrapper {
+  height: 400px;
+}
+
+@-moz-keyframes fold {
+  /* line 45, ../scss/paper.scss */
+  10% {
+    left: -350px;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  /* line 50, ../scss/paper.scss */
+  100% {
+    left: -735px;
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-moz-keyframes fold2 {
+  /* line 58, ../scss/paper.scss */
+  0% {
+    left: -350px;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  /* line 63, ../scss/paper.scss */
+  100% {
+    left: 50px;
+    -webkit-transform: rotateY(-360deg);
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    -o-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+  }
+}
+
+@-moz-keyframes flydown {
+  /* line 72, ../scss/paper.scss */
+  0% {
+    top: -350px;
+  }
+
+  /* line 76, ../scss/paper.scss */
+  100% {
+    top: 0;
+  }
+}
+
+/* line 83, ../scss/paper.scss */
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 350px solid transparent;
+  border-right: 350px solid transparent;
+  border-bottom: 350px solid grey;
+}
+
+/* line 91, ../scss/paper.scss */
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 350px solid transparent;
+  border-right: 350px solid transparent;
+  border-top: 350px solid #333333;
+}
+
+/* line 99, ../scss/paper.scss */
+.paper {
+  width: 1050px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+}
+
+/* line 104, ../scss/paper.scss */
+.top {
+  width: 100%;
+}
+
+/* line 108, ../scss/paper.scss */
+.bottom {
+  width: 100%;
+  margin-top: 23.33333px;
+}
+
+/* line 113, ../scss/paper.scss */
+.one {
+  margin: 0 auto;
+}
+
+/* line 118, ../scss/paper.scss */
+.three {
+  margin: 0 auto;
+  position: relative;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  -ms-perspective: 600px;
+  -o-perspective: 600px;
+  perspective: 600px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+  top: 0;
+  -webkit-animation-name: flydown;
+  -moz-animation-name: flydown;
+  -ms-animation-name: flydown;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -webkit-animation-iteration-count: once;
+  -moz-animation-iteration-count: once;
+  -ms-animation-iteration-count: once;
+}
+/* line 128, ../scss/paper.scss */
+.three:before {
+  content: "";
+  position: absolute;
+  left: -735px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 350px solid transparent;
+  border-right: 350px solid transparent;
+  border-top: 350px solid #333333;
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+  -webkit-animation-name: fold;
+  -moz-animation-name: fold;
+  -ms-animation-name: fold;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -webkit-animation-iteration-count: once;
+  -moz-animation-iteration-count: once;
+  -ms-animation-iteration-count: once;
+}
+/* line 142, ../scss/paper.scss */
+.three:after {
+  content: "";
+  position: absolute;
+  left: 50px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 350px solid transparent;
+  border-right: 350px solid transparent;
+  border-top: 350px solid #333333;
+  -webkit-transform: rotateY(-360deg);
+  -moz-transform: rotateY(-360deg);
+  -ms-transform: rotateY(-360deg);
+  -o-transform: rotateY(-360deg);
+  transform: rotateY(-360deg);
+  -webkit-animation-name: fold2;
+  -moz-animation-name: fold2;
+  -ms-animation-name: fold2;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -webkit-animation-iteration-count: once;
+  -moz-animation-iteration-count: once;
+  -ms-animation-iteration-count: once;
+}

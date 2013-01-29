@@ -1,0 +1,155 @@
+@import 'compass';
+
+.content-wrapper{
+	height:400px;
+}
+
+@mixin animation (
+
+	$name: false,
+
+	$duration: false,
+
+	$timing_function: false,
+
+	$delay: false,
+
+	$iteration_count: infinite,
+
+	$direction: false
+
+) {
+
+	@if $name { -webkit-animation-name: $name; -moz-animation-name: $name; -ms-animation-name: $name; }
+
+	@if $duration { -webkit-animation-duration: $duration; -moz-animation-duration: $duration; -ms-animation-duration: $duration; }
+
+	@if $timing_function { -webkit-animation-timing-function: $timing_function; -moz-animation-timing-function: $timing_function; -ms-animation-timing-function: $timing_function; }
+
+	@if $delay { -webkit-animation-delay: $delay; -moz-animation-delay: $delay; -ms-animation-delay: $delay; }
+
+	@if $iteration_count { -webkit-animation-iteration-count: $iteration_count; -moz-animation-iteration-count: $iteration_count; -ms-animation-iteration-count: $iteration_count; }
+
+	@if $direction { -webkit-animation-direction: $direction; -moz-animation-direction: $direction; -ms-animation-direction: $direction; }
+
+}
+
+//Sample Usage
+//@include animation(highlight, 1s , ease-in-out, 0 , once, false);
+
+$size      : 350px;
+$colorup   : grey;
+$colordown : #333;
+
+@-moz-keyframes fold{
+	10%{ 
+		left  : -$size;
+		@include rotateY(0deg);
+	}
+
+	100%{
+		left : -$size*2 - ($size/10);
+		@include rotateY(360deg);
+	}
+}
+
+
+@-moz-keyframes fold2{
+	0%{ 
+		left  : -$size;
+		@include rotateY(0deg);
+	}
+
+	100%{
+		left : + ($size/7);
+		@include rotateY(-360deg);
+	}
+}
+
+
+
+@-moz-keyframes flydown{
+	0%{ 
+		top  : -$size;
+	}
+
+	100%{
+		top: 0;
+	}
+}
+
+
+
+.arrow-up {
+	width         : 0; 
+	height        : 0; 
+	border-left   : $size  solid transparent;
+	border-right  : $size  solid transparent;	
+	border-bottom : $size  solid $colorup;
+}
+
+.arrow-down {
+	width        : 0; 
+	height       : 0; 
+	border-left  : $size  solid transparent;
+	border-right : $size  solid transparent;	
+	border-top   : $size  solid $colordown;
+}
+
+.paper{
+	width: $size*3;
+	@include opacity(0.2);
+}
+
+.top{
+	width: 100%;
+}
+
+.bottom{
+	width: 100%;
+	margin-top: ($size/15);
+}
+
+.one{
+	margin: 0 auto;
+	
+}
+
+.three{
+	margin: 0 auto;
+	position: relative;
+	@include perspective(600px);
+	@include transform-style(preserve-3d);
+	position : relative;
+	top      : 0;
+	@include animation(flydown, 1s , ease-in-out, 0s , once, false);
+
+
+	&:before{
+		content      : "";
+		position     : absolute;
+		left         : -$size*2 - ($size/10);
+		top          : 0;
+		width        : 0; 
+		height       : 0; 
+		border-left  : $size  solid transparent;
+		border-right : $size  solid transparent;		
+		border-top   : $size  solid $colordown;
+		@include rotateY(360deg);
+		@include animation(fold, 1s , ease-in-out, 0s , once, false);
+	}
+
+	&:after{
+		content      : "";
+		position     : absolute;
+		left         : + ($size/7);
+		top          : 0;
+		width        : 0;
+		height       : 0; 
+		border-left  : $size  solid transparent;
+		border-right : $size  solid transparent;		
+		border-top: $size  solid $colordown;
+		@include rotateY(-360deg);	
+		@include animation(fold2, 1s , ease-in-out, 0s , once, false);
+	}
+}
