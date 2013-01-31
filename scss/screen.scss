@@ -584,3 +584,53 @@ footer{
 		}
 	}
 }
+
+
+@media(max-width : 480px){
+	.loadstate h1{
+		font-size: 60px;
+	}
+
+	.job-description h1{
+		font-size: 40px;
+
+
+	}
+
+	.profile-description{
+		img{
+			display:block;
+			margin: 0 auto;
+			padding: 25px;
+		}
+
+		p{
+			display:block;
+			width: 100%;
+		}
+	}
+
+	.skill{
+		ul{
+			padding-left:0;
+
+			li{
+				span{
+					left     : -40px;
+					position : relative;
+					@include scale(.7);
+					@include transform-origin(left center);
+				}
+			}
+		}
+	}
+
+	.project-box{
+		max-width: 100%;
+		img{
+			
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
