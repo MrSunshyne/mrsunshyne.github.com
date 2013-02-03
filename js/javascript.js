@@ -11,6 +11,7 @@ function MenuController(){
 		$(this).bind('click', { link : $(this)}, function(e){
 			e.preventDefault();
 			$('.loadstate').removeClass('loadstate');
+			$('.poster-card-wrapper').hide();
 			if ($(this).parent().hasClass('active')){
 
 			}else{
@@ -32,6 +33,9 @@ function MenuController(){
 		$(this).addClass('loadstate');
 		$('article').fadeOut();
 		$('.active').removeClass('active');
+		$('.poster-card-wrapper').show();
 	})
+
+
 
 }
