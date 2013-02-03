@@ -14,6 +14,48 @@
 }
 
 
+@mixin animate($name, $duration:1s , $iteration:1 , $timing:linear , $direction:normal , $delay:0s, $fillmode:forwards){
+  /*Firefox*/
+  -moz-animation-name               : $name;
+  -moz-animation-duration           : $duration;
+  -moz-animation-iteration-count    : $iteration;
+  -moz-animation-timing-function    : $timing;
+  /*Chrome Safari                   : value*/
+  -webkit-animation-name            : $name;
+  -webkit-animation-duration        : $duration;
+  -webkit-animation-iteration-count : $iteration;
+  -webkit-animation-timing-function : $timing;
+  -webkit-animation-delay           : $delay;
+  /*Opera                           : value*/
+  -o-animation-name                 : $name;
+  -o-animation-duration             : $duration;
+  -o-animation-iteration-count      : $iteration;
+  -o-animation-timing-function      : $timing;
+  /*Microsoft                       : value*/
+  -ms-animation-name                : $name;
+  -ms-animation-duration            : $duration;
+  -ms-animation-iteration-count     : $iteration;
+  -ms-animation-timing-function     : $timing;
+  /*The future                      : value*/
+  animation-name                    : $name;
+  animation-duration                : $duration;
+  animation-iteration-count         : $iteration;
+  animation-timing-function         : $timing;
+}
+
+
+@-webkit-keyframes swing{
+	0%{ @include rotateZ(-10deg)}
+	50%{ @include rotateZ(10deg)}	
+	100%{ @include rotateZ(-10deg)}	
+}
+
+@-moz-keyframes swing{
+	0%{ @include rotateZ(-10deg)}
+	50%{ @include rotateZ(10deg)}	
+	100%{ @include rotateZ(-10deg)}	
+}
+
 .page-curl {
 	background: #FFFFFF;
 	background: -moz-linear-gradient(0deg, #F5F5F5 0%, #FFF 25%, #FFF 75%, #F5F5F5 100%);
@@ -651,8 +693,26 @@ footer{
 			}
 		}
 	}
+}
 
+.poster-card{
+	position   : absolute;
+	top        : 250px;
+	right      : 277px;
+	display    : block;
+	background : url(../images/bg/poster-bg.png) no-repeat center center;
+	width      : 222px;
+	height     : 206px;
+	@include transform-origin( top ,  center );
+	@include animate(swing, 3s , infinite, ease-in-out);
 
+	p{
+		position: relative;
+		top: 100px;
+		font-size: 25px;
+		font-family : "Imprima", sans-serif;
+		text-align: center;
+	}
 }
 
 .toggler{
@@ -671,6 +731,12 @@ footer{
 	height: auto;
 	display:block;
 	@include transition(all .5s ease);
+}
+
+@media(max-width: 1650px){
+	body .poster-card{
+		display:none;
+	}
 }
 
 @media (max-width: 900px ) {
@@ -706,6 +772,11 @@ footer{
 		}
 	}
 
+	.poster-card{
+		top: 72px;
+		left: 50%;
+		margin-left: -111px;
+	}
 }
 
 
