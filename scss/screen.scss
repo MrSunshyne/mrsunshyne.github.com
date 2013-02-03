@@ -118,6 +118,13 @@
 }
 
 /* Typography */
+
+a, a:visited{
+	color           : #62AFFD;
+	text-decoration : none;
+	border-bottom   : 1px dotted #62AFFD;
+}
+
 h1, h2{
 	font-size: 24px;
 	padding:0;
@@ -295,6 +302,10 @@ header{
 		display:none;
 		font-family: "Medula One", cursive;
 
+	}
+
+	h4{
+		display:none;
 	}
 }
 
@@ -579,10 +590,32 @@ header{
 		padding: 1em 0;
 	}
 
+	h4{
+		text-align  : center;
+		font-family : "Imprima";
+		display:block;
+		font-weight : 100;
+		opacity     : 0;
+		@include transition(all .5s ease);
+		margin-bottom:2em;
+		line-height: 2em;
+		background:  #00C864	;
+		color:       white;
+		@include     box-shadow(0 4px 1px #000);
+	}
+
+	&:hover{
+		h4{
+			opacity: 1;
+			@include transition(all .5s ease);
+		}
+	}
+
+
 	h3{
 		display:block;
 		text-align: center;
-		padding: 0 0 4em 0;
+		padding: 0 0 2em 0;
 	}
 
 }
@@ -597,13 +630,29 @@ footer{
 	position:relative;
 	bottom:0;
 
-	div{
+	p{
+		display:inline-block;
 		width: 100%;
 		padding: 1em 0;
 		text-align: center;
 		font-family: "Reenie Beanie";
 		font-size: 24px;
+
+		a, a:visited{
+			font-family: "Open Sans" , sans-serif;
+			margin-left: 10px;
+			color: #444;
+			font-size: 16px;
+			@include transition(all .5s ease);
+
+			&:hover{
+				@include rotateX(360deg);
+				@include transition(all .5s ease);
+			}
+		}
 	}
+
+
 }
 
 .toggler{
