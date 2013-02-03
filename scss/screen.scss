@@ -1,5 +1,6 @@
 @import 'compass';
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import 'font-awesome.scss';
+@import url(http://fonts.googleapis.com/css?family=Imprima|Open+Sans:400,300);
 
 @font-face {
     font-family: 'WebSymbolsRegular';
@@ -11,6 +12,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 
 .page-curl {
 	background: #FFFFFF;
@@ -122,26 +124,63 @@ h1, h2{
 	margin: 0;
 	font-family: 'Open Sans' , sans-serif;
 	
+	
 }
 
 article h1{
+	font-family: 'Imprima' , sans-serif;
 	text-align     : left;
 	//padding-top : 40px;
 	font-size: 28px;
 	
 	//
 
-	border-left     : 20px solid #62AFFD;
-	border-bottom   : 1px solid #62AFFD;
+	border-left     : 20px solid #DDDDDD;
+	border-bottom   : 1px solid #DDDDDD;
+	@include transition(all .2s ease);
 	text-indent     : 10px;
 	color           : #444;
 	margin-bottom  : 20px;
 	//border-bottom : 2px dashed grey;
 	//background    : url(http://www.dreamtemplate.com/dreamcodes/divider/images/tsc_divider7.png) no-repeat bottom center;
+
+
+	i{
+		color           : #DDDDDD;
+		float:right;
+		padding-right: 10px;
+		@include transition(color .2s ease);
+	}
+
+	&:hover{
+		border-left     : 20px solid #62AFFD;
+		border-bottom   : 1px solid #62AFFD;
+		i{
+			@include transition(all .2s ease);
+			color: #62AFFD;
+		}
+	}
+}
+
+.resume-group:hover  {
+	h1 {
+		@include transition(all .2s ease);
+		border-left     : 20px solid #62AFFD;
+		border-bottom   : 1px solid #62AFFD;
+	}
+	i{
+		@include transition(all .2s ease);
+		color: #62AFFD;
+	}
+}
+
+
+h2{
+	font-family: 'Imprima' , sans-serif;
 }
 
 article h2{
-
+	font-family: 'Imprima' , sans-serif;
 	padding-top:20px;
 
 
@@ -303,8 +342,10 @@ header{
 	@include box-sizing('border-box');
 	h3{
 		font-family : "Reenie Beanie";
+		font-family : "Imprima", sans-serif;
 		text-align  : center;
-		font-size   : 36px;
+		font-weight: 100;
+		font-size   : 24px;
 	}
 	ul{
 		li{
@@ -328,14 +369,29 @@ header{
 				height: 30px;
 				background: url('../images/bg/bullet.png') no-repeat;
 				float:right;
+				
 
-				$height:32px;
+
+				$height     : 32px;
+
+				i{
+					font-size      : $height - 8px;
+					line-height    : $height;
+					width        : 1.2em;	
+					color          : #62AFFD;
+					text-shadow    : 0 0 1px #000;
+					font-weight    : 600;
+					letter-spacing : 10px;
+				}
+				
 
 				&.lvl6{
 					background-position: 0px (-($height * 0));
+					//&:before         { content: "\f10c"; }
 				}				
 				&.lvl5{
 					background-position: 0px (-($height * 1));
+					//&:before         { content: "\f10c\f10c\f10c\f10c\f10c\f0dd"; }
 				}				
 				&.lvl4{
 					background-position: 0px (-($height * 2));
@@ -546,6 +602,7 @@ footer{
 		padding: 1em 0;
 		text-align: center;
 		font-family: "Reenie Beanie";
+		font-size: 24px;
 	}
 }
 
@@ -555,6 +612,7 @@ footer{
 
 .toggler + div, .toggler + ul{
 	height:0;
+	display:none;
 	opacity: 0;
 	@include transition(all .2s ease);
 }
@@ -575,6 +633,10 @@ footer{
 
 	.detailed-profile, .profile-description{
 		width: 100%;
+		fieldset{
+			width   : 45%;
+			display : inline-block;
+		}
 	}
 
 	div.logo{
@@ -583,6 +645,18 @@ footer{
 			display:none;
 		}
 	}
+
+	.project-box{
+		max-width: 50%;
+		img{
+			
+			max-width  : 100%;
+			height     : auto;
+			margin     : 0 auto;
+			text-align : center;
+		}
+	}
+
 }
 
 
@@ -607,6 +681,15 @@ footer{
 		p{
 			display:block;
 			width: 100%;
+		}
+
+	}
+
+	.detailed-profile{		
+		fieldset{
+			width: 80%;
+			display:block;
+			margin: 0 auto;
 		}
 	}
 

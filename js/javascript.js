@@ -28,4 +28,9 @@ function MenuController(){
 		$(this).toggleClass('active');
 	})
 
+	$('.job-description').bind('click', function(){
+		$(this).addClass('loadstate');
+		$('article').fadeOut();
+	})
+
 }
