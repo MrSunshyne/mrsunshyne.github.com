@@ -2326,11 +2326,14 @@ footer p a:hover, footer p a:visited:hover {
 }
 
 /* line 698, ../scss/screen.scss */
-.poster-card {
+.poster-card-wrapper {
   position: absolute;
   top: 250px;
   right: 277px;
   display: block;
+}
+/* line 704, ../scss/screen.scss */
+.poster-card-wrapper .poster-card {
   background: url(../images/bg/poster-bg.png) no-repeat center center;
   width: 222px;
   height: 206px;
@@ -2366,21 +2369,21 @@ footer p a:hover, footer p a:visited:hover {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-/* line 709, ../scss/screen.scss */
-.poster-card p {
+/* line 711, ../scss/screen.scss */
+.poster-card-wrapper .poster-card p {
   position: relative;
-  top: 100px;
+  top: 120px;
   font-size: 25px;
   font-family: "Imprima", sans-serif;
   text-align: center;
 }
 
-/* line 718, ../scss/screen.scss */
+/* line 722, ../scss/screen.scss */
 .toggler {
   cursor: pointer;
 }
 
-/* line 722, ../scss/screen.scss */
+/* line 726, ../scss/screen.scss */
 .toggler + div, .toggler + ul {
   height: 0;
   display: none;
@@ -2391,7 +2394,7 @@ footer p a:hover, footer p a:visited:hover {
   transition: all 0.2s ease;
 }
 
-/* line 729, ../scss/screen.scss */
+/* line 733, ../scss/screen.scss */
 .toggler.active + div, .toggler.active + ul {
   opacity: 1;
   height: auto;
@@ -2403,91 +2406,112 @@ footer p a:hover, footer p a:visited:hover {
 }
 
 @media (max-width: 1650px) {
-  /* line 737, ../scss/screen.scss */
-  body .poster-card {
-    display: none;
+  /* line 741, ../scss/screen.scss */
+  .poster-card-wrapper {
+    top: 24px;
+    left: 50%;
+    margin-left: -155px;
+    -webkit-transform: scale(0.7, 0.7);
+    -moz-transform: scale(0.7, 0.7);
+    -ms-transform: scale(0.7, 0.7);
+    -o-transform: scale(0.7, 0.7);
+    transform: scale(0.7, 0.7);
   }
 }
 @media (max-width: 900px) {
-  /* line 743, ../scss/screen.scss */
+  /* line 752, ../scss/screen.scss */
+  .poster-card-wrapper {
+    top: 24px;
+    left: 50%;
+    margin-left: -111px;
+    -webkit-transform: scale(0.7, 0.7);
+    -moz-transform: scale(0.7, 0.7);
+    -ms-transform: scale(0.7, 0.7);
+    -o-transform: scale(0.7, 0.7);
+    transform: scale(0.7, 0.7);
+  }
+
+  /* line 760, ../scss/screen.scss */
   article.page-curl, .detailed-profile, .profile-description, .skill, .ca-menu li, .ca-menu, div.logo {
     width: 80%;
     float: none;
   }
 
-  /* line 749, ../scss/screen.scss */
+  /* line 766, ../scss/screen.scss */
   .detailed-profile, .profile-description {
     width: 100%;
   }
-  /* line 751, ../scss/screen.scss */
+  /* line 768, ../scss/screen.scss */
   .detailed-profile fieldset, .profile-description fieldset {
     width: 45%;
     display: inline-block;
   }
 
-  /* line 757, ../scss/screen.scss */
+  /* line 774, ../scss/screen.scss */
   div.logo {
     text-align: center;
   }
-  /* line 759, ../scss/screen.scss */
+  /* line 776, ../scss/screen.scss */
   div.logo .email {
     display: none;
   }
 
-  /* line 764, ../scss/screen.scss */
+  /* line 781, ../scss/screen.scss */
   .project-box {
     max-width: 50%;
   }
-  /* line 766, ../scss/screen.scss */
+  /* line 783, ../scss/screen.scss */
   .project-box img {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
     text-align: center;
   }
-
-  /* line 775, ../scss/screen.scss */
-  .poster-card {
-    top: 72px;
-    left: 50%;
-    margin-left: -111px;
-  }
 }
 @media (max-width: 480px) {
-  /* line 784, ../scss/screen.scss */
+  /* line 798, ../scss/screen.scss */
+  .poster-card-wrapper {
+    position: relative;
+    left: auto;
+    right: auto;
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  /* line 806, ../scss/screen.scss */
   .loadstate h1 {
     font-size: 60px;
   }
 
-  /* line 788, ../scss/screen.scss */
+  /* line 810, ../scss/screen.scss */
   .job-description h1 {
     font-size: 40px;
   }
 
-  /* line 795, ../scss/screen.scss */
+  /* line 817, ../scss/screen.scss */
   .profile-description img {
     display: block;
     margin: 0 auto;
     padding: 25px;
   }
-  /* line 801, ../scss/screen.scss */
+  /* line 823, ../scss/screen.scss */
   .profile-description p {
     display: block;
     width: 100%;
   }
 
-  /* line 809, ../scss/screen.scss */
+  /* line 831, ../scss/screen.scss */
   .detailed-profile fieldset {
     width: 80%;
     display: block;
     margin: 0 auto;
   }
 
-  /* line 817, ../scss/screen.scss */
+  /* line 839, ../scss/screen.scss */
   .skill ul {
     padding-left: 0;
   }
-  /* line 821, ../scss/screen.scss */
+  /* line 843, ../scss/screen.scss */
   .skill ul li span {
     left: -40px;
     position: relative;
@@ -2503,11 +2527,11 @@ footer p a:hover, footer p a:visited:hover {
     transform-origin: left center 50%;
   }
 
-  /* line 831, ../scss/screen.scss */
+  /* line 853, ../scss/screen.scss */
   .project-box {
     max-width: 100%;
   }
-  /* line 833, ../scss/screen.scss */
+  /* line 855, ../scss/screen.scss */
   .project-box img {
     max-width: 100%;
     height: auto;

@@ -695,24 +695,28 @@ footer{
 	}
 }
 
-.poster-card{
+.poster-card-wrapper{
 	position   : absolute;
 	top        : 250px;
 	right      : 277px;
 	display    : block;
-	background : url(../images/bg/poster-bg.png) no-repeat center center;
-	width      : 222px;
-	height     : 206px;
-	@include transform-origin( top ,  center );
-	@include animate(swing, 3s , infinite, ease-in-out);
 
-	p{
-		position: relative;
-		top: 100px;
-		font-size: 25px;
-		font-family : "Imprima", sans-serif;
-		text-align: center;
+	.poster-card{
+		background : url(../images/bg/poster-bg.png) no-repeat center center;
+		width      : 222px;
+		height     : 206px;
+		@include transform-origin( top ,  center );
+		@include animate(swing, 3s , infinite, ease-in-out);
+
+		p{
+			position: relative;
+			top: 120px;
+			font-size: 25px;
+			font-family : "Imprima", sans-serif;
+			text-align: center;
+		}	
 	}
+	
 }
 
 .toggler{
@@ -734,12 +738,25 @@ footer{
 }
 
 @media(max-width: 1650px){
-	body .poster-card{
-		display:none;
+	.poster-card-wrapper{
+		top: 24px;
+		left: 50%;
+		margin-left: -155px;
+		//@include opacity(.3);
+		@include scale(.7);
 	}
 }
 
 @media (max-width: 900px ) {
+
+	.poster-card-wrapper{
+		top: 24px;
+		left: 50%;
+		margin-left: -111px;
+		//@include opacity(.3);
+		@include scale(.7);
+	}
+
 	article.page-curl, .detailed-profile, .profile-description, .skill, .ca-menu li , .ca-menu , div.logo{
 		width: 80%;
 		//margin:0 auto;
@@ -772,15 +789,20 @@ footer{
 		}
 	}
 
-	.poster-card{
-		top: 72px;
-		left: 50%;
-		margin-left: -111px;
-	}
+
 }
 
 
 @media(max-width : 480px){
+
+	.poster-card-wrapper{
+		position: relative;
+		left: auto;
+		right: auto;
+		width: 260px;
+		margin: 0 auto;
+	}
+
 	.loadstate h1{
 		font-size: 60px;
 	}
