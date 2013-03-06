@@ -357,6 +357,11 @@ header{
 	float:left;
 	display:inline-block;
 
+	img{
+		margin-right: 10px;
+		margin-top:15px;
+	}
+
 
 }
 
@@ -364,6 +369,7 @@ header{
 	width: 40%;
 	display:inline-block;
 	float:right;	
+	margin-top:10px;
 
 	fieldset{
 		border     : none;		

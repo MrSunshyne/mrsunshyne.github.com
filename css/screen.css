@@ -1992,32 +1992,38 @@ header .email {
   float: left;
   display: inline-block;
 }
+/* line 360, ../scss/screen.scss */
+.profile-description img {
+  margin-right: 10px;
+  margin-top: 15px;
+}
 
-/* line 363, ../scss/screen.scss */
+/* line 368, ../scss/screen.scss */
 .detailed-profile {
   width: 40%;
   display: inline-block;
   float: right;
+  margin-top: 10px;
 }
-/* line 368, ../scss/screen.scss */
+/* line 374, ../scss/screen.scss */
 .detailed-profile fieldset {
   border: none;
   font-size: 14px;
 }
-/* line 371, ../scss/screen.scss */
+/* line 377, ../scss/screen.scss */
 .detailed-profile fieldset label {
   text-align: left;
   width: 70px;
   float: left;
 }
 
-/* line 388, ../scss/screen.scss */
+/* line 394, ../scss/screen.scss */
 .skills-container {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 392, ../scss/screen.scss */
+/* line 398, ../scss/screen.scss */
 .skill {
   float: left;
   width: 50%;
@@ -2025,7 +2031,7 @@ header .email {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 396, ../scss/screen.scss */
+/* line 402, ../scss/screen.scss */
 .skill h3 {
   font-family: "Reenie Beanie";
   font-family: "Imprima", sans-serif;
@@ -2033,7 +2039,7 @@ header .email {
   font-weight: 100;
   font-size: 24px;
 }
-/* line 404, ../scss/screen.scss */
+/* line 410, ../scss/screen.scss */
 .skill ul li {
   list-style: none;
   margin-left: 0;
@@ -2044,7 +2050,7 @@ header .email {
   *zoom: 1;
   padding-bottom: 5px;
 }
-/* line 412, ../scss/screen.scss */
+/* line 418, ../scss/screen.scss */
 .skill ul li h4 {
   width: 100px;
   margin: 0;
@@ -2053,7 +2059,7 @@ header .email {
   vertical-align: middle;
   float: left;
 }
-/* line 419, ../scss/screen.scss */
+/* line 425, ../scss/screen.scss */
 .skill ul li span {
   display: block;
   width: 200px;
@@ -2061,7 +2067,7 @@ header .email {
   background: url("../images/bg/bullet.png") no-repeat;
   float: right;
 }
-/* line 430, ../scss/screen.scss */
+/* line 436, ../scss/screen.scss */
 .skill ul li span i {
   font-size: 24px;
   line-height: 32px;
@@ -2071,36 +2077,36 @@ header .email {
   font-weight: 600;
   letter-spacing: 10px;
 }
-/* line 441, ../scss/screen.scss */
+/* line 447, ../scss/screen.scss */
 .skill ul li span.lvl6 {
   background-position: 0px 0px;
 }
-/* line 445, ../scss/screen.scss */
+/* line 451, ../scss/screen.scss */
 .skill ul li span.lvl5 {
   background-position: 0px -32px;
 }
-/* line 449, ../scss/screen.scss */
+/* line 455, ../scss/screen.scss */
 .skill ul li span.lvl4 {
   background-position: 0px -64px;
 }
-/* line 452, ../scss/screen.scss */
+/* line 458, ../scss/screen.scss */
 .skill ul li span.lvl3 {
   background-position: 0px -96px;
 }
-/* line 455, ../scss/screen.scss */
+/* line 461, ../scss/screen.scss */
 .skill ul li span.lvl2 {
   background-position: 0px -128px;
 }
-/* line 458, ../scss/screen.scss */
+/* line 464, ../scss/screen.scss */
 .skill ul li span.lvl1 {
   background-position: 0px -160px;
 }
 
-/* line 467, ../scss/screen.scss */
+/* line 473, ../scss/screen.scss */
 .main-menu {
   width: 100%;
 }
-/* line 469, ../scss/screen.scss */
+/* line 475, ../scss/screen.scss */
 .main-menu ul {
   display: inline-block;
   text-align: center;
@@ -2108,7 +2114,7 @@ header .email {
   margin: 0;
   padding: 0;
 }
-/* line 474, ../scss/screen.scss */
+/* line 480, ../scss/screen.scss */
 .main-menu ul li {
   display: inline-block;
   text-align: center;
@@ -2122,18 +2128,18 @@ header .email {
   font-style: normal;
 }
 
-/* line 492, ../scss/screen.scss */
+/* line 498, ../scss/screen.scss */
 .ca-menu {
   padding: 0;
   margin: 20px auto;
   width: 250px;
 }
-/* line 497, ../scss/screen.scss */
+/* line 503, ../scss/screen.scss */
 .ca-menu h2 {
   margin-top: 0;
 }
 
-/* line 501, ../scss/screen.scss */
+/* line 507, ../scss/screen.scss */
 .ca-menu li {
   width: 250px;
   height: 100px;
@@ -2155,7 +2161,7 @@ header .email {
   transition: all 300ms ease-in-out;
 }
 
-/* line 522, ../scss/screen.scss */
+/* line 528, ../scss/screen.scss */
 .ca-menu li a {
   text-align: left;
   width: 100%;
@@ -2165,7 +2171,7 @@ header .email {
   position: relative;
 }
 
-/* line 530, ../scss/screen.scss */
+/* line 536, ../scss/screen.scss */
 .ca-icon {
   font-family: 'WebSymbolsRegular', cursive;
   font-size: 30px;
@@ -2183,7 +2189,7 @@ header .email {
   transition: all 300ms linear;
 }
 
-/* line 546, ../scss/screen.scss */
+/* line 552, ../scss/screen.scss */
 .ca-content {
   position: absolute;
   left: 90px;
@@ -2192,7 +2198,7 @@ header .email {
   top: 20px;
 }
 
-/* line 553, ../scss/screen.scss */
+/* line 559, ../scss/screen.scss */
 .ca-main {
   font-size: 30px;
   -webkit-transition: all 300ms linear;
@@ -2202,7 +2208,7 @@ header .email {
   transition: all 300ms linear;
 }
 
-/* line 561, ../scss/screen.scss */
+/* line 567, ../scss/screen.scss */
 .ca-sub {
   font-size: 11px;
   color: #666;
@@ -2210,12 +2216,12 @@ header .email {
   font-family: "open sans";
 }
 
-/* line 567, ../scss/screen.scss */
+/* line 573, ../scss/screen.scss */
 .ca-menu li:hover, .ca-menu li.active {
   background-color: #000;
 }
 
-/* line 570, ../scss/screen.scss */
+/* line 576, ../scss/screen.scss */
 .ca-menu li:hover .ca-icon, .ca-menu li.active .ca-icon {
   color: #5EADFD;
   font-size: 120px;
@@ -2227,13 +2233,13 @@ header .email {
   transform: rotate(20deg);
 }
 
-/* line 580, ../scss/screen.scss */
+/* line 586, ../scss/screen.scss */
 .ca-menu li:hover .ca-main, .ca-menu li.active .ca-main {
   color: #5EADFD;
   opacity: 0.8;
 }
 
-/* line 584, ../scss/screen.scss */
+/* line 590, ../scss/screen.scss */
 .ca-menu li:hover .ca-sub, .ca-menu li.active .ca-sub {
   color: #fff;
   opacity: 0.8;
@@ -2241,12 +2247,12 @@ header .email {
 
 /* Target menu */
 /* Responsive */
-/* line 630, ../scss/screen.scss */
+/* line 636, ../scss/screen.scss */
 .loadstate h1 {
   font-size: 90px;
   padding: 1em 0;
 }
-/* line 635, ../scss/screen.scss */
+/* line 641, ../scss/screen.scss */
 .loadstate h4 {
   text-align: center;
   font-family: "Imprima";
@@ -2265,7 +2271,7 @@ header .email {
   -moz-box-shadow: 0 4px 1px black;
   box-shadow: 0 4px 1px black;
 }
-/* line 650, ../scss/screen.scss */
+/* line 656, ../scss/screen.scss */
 .loadstate:hover h4 {
   opacity: 1;
   -webkit-transition: all 0.5s ease;
@@ -2273,26 +2279,26 @@ header .email {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 657, ../scss/screen.scss */
+/* line 663, ../scss/screen.scss */
 .loadstate h3 {
   display: block;
   text-align: center;
   padding: 0 0 2em 0;
 }
 
-/* line 665, ../scss/screen.scss */
+/* line 671, ../scss/screen.scss */
 .project-box {
   display: inline-block;
   padding: 10px;
   text-align: center;
 }
 
-/* line 671, ../scss/screen.scss */
+/* line 677, ../scss/screen.scss */
 footer {
   position: relative;
   bottom: 0;
 }
-/* line 675, ../scss/screen.scss */
+/* line 681, ../scss/screen.scss */
 footer p {
   display: inline-block;
   width: 100%;
@@ -2301,7 +2307,7 @@ footer p {
   font-family: "Reenie Beanie";
   font-size: 24px;
 }
-/* line 683, ../scss/screen.scss */
+/* line 689, ../scss/screen.scss */
 footer p a, footer p a:visited {
   font-family: "Open Sans" , sans-serif;
   margin-left: 10px;
@@ -2312,7 +2318,7 @@ footer p a, footer p a:visited {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 690, ../scss/screen.scss */
+/* line 696, ../scss/screen.scss */
 footer p a:hover, footer p a:visited:hover {
   -webkit-transform: rotateX(360deg);
   -moz-transform: rotateX(360deg);
@@ -2325,14 +2331,14 @@ footer p a:hover, footer p a:visited:hover {
   transition: all 0.5s ease;
 }
 
-/* line 698, ../scss/screen.scss */
+/* line 704, ../scss/screen.scss */
 .poster-card-wrapper {
   position: absolute;
   top: 250px;
   right: 277px;
   display: block;
 }
-/* line 704, ../scss/screen.scss */
+/* line 710, ../scss/screen.scss */
 .poster-card-wrapper .poster-card {
   background: url(../images/bg/poster-bg.png) no-repeat center center;
   width: 222px;
@@ -2369,7 +2375,7 @@ footer p a:hover, footer p a:visited:hover {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-/* line 711, ../scss/screen.scss */
+/* line 717, ../scss/screen.scss */
 .poster-card-wrapper .poster-card p {
   position: relative;
   top: 120px;
@@ -2378,12 +2384,12 @@ footer p a:hover, footer p a:visited:hover {
   text-align: center;
 }
 
-/* line 722, ../scss/screen.scss */
+/* line 728, ../scss/screen.scss */
 .toggler {
   cursor: pointer;
 }
 
-/* line 726, ../scss/screen.scss */
+/* line 732, ../scss/screen.scss */
 .toggler + div, .toggler + ul {
   height: 0;
   display: none;
@@ -2394,7 +2400,7 @@ footer p a:hover, footer p a:visited:hover {
   transition: all 0.2s ease;
 }
 
-/* line 733, ../scss/screen.scss */
+/* line 739, ../scss/screen.scss */
 .toggler.active + div, .toggler.active + ul {
   opacity: 1;
   height: auto;
@@ -2406,7 +2412,7 @@ footer p a:hover, footer p a:visited:hover {
 }
 
 @media (max-width: 1650px) {
-  /* line 741, ../scss/screen.scss */
+  /* line 747, ../scss/screen.scss */
   .poster-card-wrapper {
     top: 24px;
     left: 50%;
@@ -2419,7 +2425,7 @@ footer p a:hover, footer p a:visited:hover {
   }
 }
 @media (max-width: 900px) {
-  /* line 752, ../scss/screen.scss */
+  /* line 758, ../scss/screen.scss */
   .poster-card-wrapper {
     top: 24px;
     left: 50%;
@@ -2431,36 +2437,36 @@ footer p a:hover, footer p a:visited:hover {
     transform: scale(0.7, 0.7);
   }
 
-  /* line 760, ../scss/screen.scss */
+  /* line 766, ../scss/screen.scss */
   article.page-curl, .detailed-profile, .profile-description, .skill, .ca-menu li, .ca-menu, div.logo {
     width: 80%;
     float: none;
   }
 
-  /* line 766, ../scss/screen.scss */
+  /* line 772, ../scss/screen.scss */
   .detailed-profile, .profile-description {
     width: 100%;
   }
-  /* line 768, ../scss/screen.scss */
+  /* line 774, ../scss/screen.scss */
   .detailed-profile fieldset, .profile-description fieldset {
     width: 45%;
     display: inline-block;
   }
 
-  /* line 774, ../scss/screen.scss */
+  /* line 780, ../scss/screen.scss */
   div.logo {
     text-align: center;
   }
-  /* line 776, ../scss/screen.scss */
+  /* line 782, ../scss/screen.scss */
   div.logo .email {
     display: none;
   }
 
-  /* line 781, ../scss/screen.scss */
+  /* line 787, ../scss/screen.scss */
   .project-box {
     max-width: 50%;
   }
-  /* line 783, ../scss/screen.scss */
+  /* line 789, ../scss/screen.scss */
   .project-box img {
     max-width: 100%;
     height: auto;
@@ -2469,7 +2475,7 @@ footer p a:hover, footer p a:visited:hover {
   }
 }
 @media (max-width: 480px) {
-  /* line 798, ../scss/screen.scss */
+  /* line 804, ../scss/screen.scss */
   .poster-card-wrapper {
     position: relative;
     left: auto;
@@ -2478,40 +2484,40 @@ footer p a:hover, footer p a:visited:hover {
     margin: 0 auto;
   }
 
-  /* line 806, ../scss/screen.scss */
+  /* line 812, ../scss/screen.scss */
   .loadstate h1 {
     font-size: 60px;
   }
 
-  /* line 810, ../scss/screen.scss */
+  /* line 816, ../scss/screen.scss */
   .job-description h1 {
     font-size: 40px;
   }
 
-  /* line 817, ../scss/screen.scss */
+  /* line 823, ../scss/screen.scss */
   .profile-description img {
     display: block;
     margin: 0 auto;
     padding: 25px;
   }
-  /* line 823, ../scss/screen.scss */
+  /* line 829, ../scss/screen.scss */
   .profile-description p {
     display: block;
     width: 100%;
   }
 
-  /* line 831, ../scss/screen.scss */
+  /* line 837, ../scss/screen.scss */
   .detailed-profile fieldset {
     width: 80%;
     display: block;
     margin: 0 auto;
   }
 
-  /* line 839, ../scss/screen.scss */
+  /* line 845, ../scss/screen.scss */
   .skill ul {
     padding-left: 0;
   }
-  /* line 843, ../scss/screen.scss */
+  /* line 849, ../scss/screen.scss */
   .skill ul li span {
     left: -40px;
     position: relative;
@@ -2527,11 +2533,11 @@ footer p a:hover, footer p a:visited:hover {
     transform-origin: left center 50%;
   }
 
-  /* line 853, ../scss/screen.scss */
+  /* line 859, ../scss/screen.scss */
   .project-box {
     max-width: 100%;
   }
-  /* line 855, ../scss/screen.scss */
+  /* line 861, ../scss/screen.scss */
   .project-box img {
     max-width: 100%;
     height: auto;
