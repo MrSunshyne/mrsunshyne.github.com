@@ -1,5 +1,6 @@
 @import 'compass';
 @import 'font-awesome.scss';
+@import 'compass/css3/filter';
 @import url(http://fonts.googleapis.com/css?family=Imprima|Open+Sans:400,300);
 
 @font-face {
@@ -28,7 +29,7 @@
   -webkit-animation-delay           : $delay;
   /*Opera                           : value*/
   -o-animation-name                 : $name;
-  -o-animation-duration             : $duration;
+  -o-animation-duration             : $duration; 
   -o-animation-iteration-count      : $iteration;
   -o-animation-timing-function      : $timing;
   /*Microsoft                       : value*/
@@ -673,6 +674,89 @@ header{
 	padding: 10px;
 	text-align: center;
 }
+
+/*========================================
+=            Portfolio Images            =
+========================================*/
+
+.portfolio-images{
+	list-style: none;
+	padding:0;
+	li{
+		list-style: none;
+		position:relative;
+		margin-bottom: 40px;
+		@include box-sizing('border-box');
+
+		img{
+			max-width: 100%;
+			height: auto;
+			@include filter(blur(4px));
+			-moz-opacity: .5;
+			@include transition(all .5s ease);
+
+
+		}
+
+		.portfolio-image-info{
+			background: rgba(0,0,0,0.7);
+			padding: 5% 10%;
+			position: absolute;
+			left:     50%;
+			top:      50%;
+			@include translate(-50%,-50%);
+			text-align: center;
+
+			h2{
+				font-size: 30px;
+				padding-bottom: 3px;
+				color:white;
+				display:block;
+			}
+			.portfolio-contribution{
+				display:block;
+				color:white;
+			}
+
+		}		
+
+		.view-page{
+			position:absolute;
+			right:0;
+			top:0;
+			background: rgba(255,255,255,1);
+			color: black;
+			text-transform: uppercase;
+			line-height: 30px;
+			width:75px;			
+			text-align: center;
+			display:none;
+		}
+
+
+		&:hover, &:active{
+	
+			box-shadow: 0 0 5px #000;
+
+			img{
+				@include filter(blur(0px));
+				@include transition(all .5s ease);	
+				-moz-opacity: 1;			
+			}
+
+			.portfolio-image-info{
+				display:none;
+
+			}
+
+			.view-page{
+				display:block;
+			}
+		}		
+	}
+}
+
+/*-----  End of Portfolio Images  ------*/
 
 footer{
 	position:relative;
