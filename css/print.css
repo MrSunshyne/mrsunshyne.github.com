@@ -1,16 +1,16 @@
 /* line 1, ../scss/print.scss */
 article {
-  display: block;
+  display: block !important;
 }
 
 /* line 5, ../scss/print.scss */
-nav, main-menu {
-  display: none;
+nav, .main-menu, #portfolio, #projects-i-use, .flickerwidget {
+  display: none!important;
 }
 
 /* line 9, ../scss/print.scss */
-article {
-  box-shadow: none;
+article, article:before, article:after {
+  box-shadow: 0 0 0 white !important;
 }
 
 /* line 13, ../scss/print.scss */

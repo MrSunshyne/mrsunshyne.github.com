@@ -1,13 +1,13 @@
 article{
-	display:block
+	display:block!important;
 }
 
-nav,main-menu{
+nav, .main-menu, #portfolio, #projects-i-use{
 	display:none;
 }
 
-article{
-	box-shadow:none;
+article, article:before , article:after{
+	box-shadow: 0 0 0 #fff!important;
 }
 
 .job-description{
