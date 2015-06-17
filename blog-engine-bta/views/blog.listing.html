@@ -1,8 +1,10 @@
-<div class="row blog-listing">
-  <div class="btn btn-default" ng-click="addItems()">Add</div>
+<div class="page-blog-list">
+  <a class="btn btn-default" ng-click="addItems()">Add</a>
 
-  <hr>
+  <hr class="col-lg-12">
 
-  <ui-article-card class="repeat-animation" ng-repeat="title in items"></ui-article-card>
+  <div class="row center-xs cascade">
+    <ui-article-card class="animation-article-cards animated-view" ng-repeat="title in items"></ui-article-card>
+  </div>
 
 </div>
